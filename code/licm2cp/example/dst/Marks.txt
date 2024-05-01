@@ -1,0 +1,3 @@
+0 /home/zy/OptChecker/code/licm2cp/example/dst/test.cpp:5:9
+1 /home/zy/OptChecker/code/licm2cp/example/dst/test.cpp:6:10
+2 /home/zy/OptChecker/code/licm2cp/example/dst/test.cpp:7:10

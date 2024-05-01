@@ -1,0 +1,2 @@
+0 0 /home/zy/OptChecker/code/ab2dce/example/dst/test.cpp:5:11
+1 2 /home/zy/OptChecker/code/ab2dce/example/dst/test.cpp:6:11

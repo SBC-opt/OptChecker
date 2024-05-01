@@ -1,0 +1,8 @@
+code/*/nohup.out
+code/*/Results_*
+code/*/test
+code/*/yarpgen_out
+code/*/barf.log
+gcc/build
+llvm-project/build
+yarpgen/build

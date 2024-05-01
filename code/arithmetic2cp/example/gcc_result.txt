@@ -1,0 +1,35 @@
+Inconsistence is detected, dst_optimized 1, src_optimized 0
+Variable line: 5    Expression line: 8
+src after transformed:=============================
+extern int a;
+extern int b;
+extern int c;
+#define type1 long long int
+#define type2 long long int
+type1 Optimized_Mark1; type2 Variable_Static;
+ 
+#include "init.h"
+
+void test(int m, int n, int t) {
+    t = m ^ 100;
+type1 Variable_T = n / t; n = n / t + Optimized_Mark1;
+    a = m + 2;
+    b = ~m;
+Variable_Static = b || n || a; n = Variable_T;
+} 
+dst after transformed:=============================
+extern int a;
+extern int b;
+extern int c;
+#define type long long int
+type Optimized_Mark2, Variable_Mark1, Variable_Mark2;
+ 
+#include "init.h"
+
+void test(int m, int n, int t) {
+    t = m ^ 100;
+    n = n / t;
+    a = m + 2;
+    b = ~m;
+if((b || Variable_Mark1 || a)-(b || Variable_Mark2 || a)){Optimized_Mark2=1;}
+} 
