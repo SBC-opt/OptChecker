@@ -1,0 +1,1 @@
+/usr/local/bin/c++ -O3 -DNDEBUG  -static CMakeFiles/type_test.dir/type_test.cpp.o -o ../type_test  libyarpgen_lib.a 

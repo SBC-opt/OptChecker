@@ -1,0 +1,1 @@
+/usr/local/bin/c++ -O3 -DNDEBUG  -static CMakeFiles/expr_test.dir/expr_test.cpp.o -o ../expr_test  libyarpgen_lib.a 
