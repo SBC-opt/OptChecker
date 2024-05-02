@@ -40,10 +40,14 @@ else
     clang -o $testDir/src/test.o -g -O3 -fwrapv -fno-tree-vectorize -c $testDir/src/test.cpp
 fi
 
-#check dst&&src
-echo "check notOptimized..."
-python3 $dwarfpy $testDir/dst/test.o $testDir/dst/notOptimized.txt
-python3 $dwarfpy $testDir/src/test.o $testDir/src/notOptimized.txt
+if [ ! -s "$testDir/src/test.o" ] || [ ! -s "$testDir/dst/test.o" ]; then
+    echo -e "\e[31m     Compiler Error!  Skip...\e[0m"
+else
+    #check dst&&src
+    echo "check notOptimized..."
+    python3 $dwarfpy $testDir/dst/test.o $testDir/dst/notOptimized.txt
+    python3 $dwarfpy $testDir/src/test.o $testDir/src/notOptimized.txt
 
-echo "get result..."
-python3 $getResultpy $testDir $outFile
+    echo "get result..."
+    python3 $getResultpy $testDir $outFile
+fi
