@@ -1,0 +1,61 @@
+2024-05-02 15:50:08,651: barf.barf:INFO: Initializing BARF
+2024-05-02 15:50:08,654: barf.barf:WARNING: Z3 Solver is not installed. Run 'barf-install-solvers.sh' to install it.
+2024-05-02 15:50:08,654: barf.arch.emulator:INFO: Loading ELF image into memory
+2024-05-02 15:50:08,655: barf.barf:WARNING: Z3 Solver is not installed. Run 'barf-install-solvers.sh' to install it.
+2024-05-02 15:50:08,655: barf.arch.emulator:INFO: Loading ELF image into memory
+2024-05-02 15:50:08,956: barf.analysis.graphs.controlflowgraph:WARNING: Error while disassembling @ 0xba
+Traceback (most recent call last):
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/analysis/graphs/controlflowgraph.py", line 294, in _disassemble_bb
+    asm = self._disasm.disassemble(data_chunk, addr)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/arch/x86/disassembler.py", line 72, in disassemble
+    raise DisassemblerError()
+barf.arch.disassembler.DisassemblerError
+2024-05-02 15:50:08,958: barf.analysis.graphs.controlflowgraph:WARNING: Error while disassembling @ 0xba
+Traceback (most recent call last):
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/analysis/graphs/controlflowgraph.py", line 294, in _disassemble_bb
+    asm = self._disasm.disassemble(data_chunk, addr)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/arch/x86/disassembler.py", line 72, in disassemble
+    raise DisassemblerError()
+barf.arch.disassembler.DisassemblerError
+2024-05-02 15:50:08,959: barf.analysis.graphs.controlflowgraph:WARNING: Error while disassembling @ 0xba
+Traceback (most recent call last):
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/analysis/graphs/controlflowgraph.py", line 294, in _disassemble_bb
+    asm = self._disasm.disassemble(data_chunk, addr)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/arch/x86/disassembler.py", line 72, in disassemble
+    raise DisassemblerError()
+barf.arch.disassembler.DisassemblerError
+2024-05-02 15:50:08,961: barf.analysis.graphs.controlflowgraph:WARNING: Error while disassembling @ 0x12a
+Traceback (most recent call last):
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/analysis/graphs/controlflowgraph.py", line 294, in _disassemble_bb
+    asm = self._disasm.disassemble(data_chunk, addr)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/arch/x86/disassembler.py", line 72, in disassemble
+    raise DisassemblerError()
+barf.arch.disassembler.DisassemblerError
+2024-05-02 15:50:08,962: barf.analysis.graphs.controlflowgraph:WARNING: Error while disassembling @ 0x12a
+Traceback (most recent call last):
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/analysis/graphs/controlflowgraph.py", line 294, in _disassemble_bb
+    asm = self._disasm.disassemble(data_chunk, addr)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/arch/x86/disassembler.py", line 72, in disassemble
+    raise DisassemblerError()
+barf.arch.disassembler.DisassemblerError
+2024-05-02 15:50:08,964: barf.analysis.graphs.controlflowgraph:WARNING: Error while disassembling @ 0x12a
+Traceback (most recent call last):
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/analysis/graphs/controlflowgraph.py", line 294, in _disassemble_bb
+    asm = self._disasm.disassemble(data_chunk, addr)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/arch/x86/disassembler.py", line 72, in disassemble
+    raise DisassemblerError()
+barf.arch.disassembler.DisassemblerError
+2024-05-02 15:50:08,964: barf.analysis.graphs.controlflowgraph:WARNING: Error while disassembling @ 0x163
+Traceback (most recent call last):
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/analysis/graphs/controlflowgraph.py", line 294, in _disassemble_bb
+    asm = self._disasm.disassemble(data_chunk, addr)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/arch/x86/disassembler.py", line 72, in disassemble
+    raise DisassemblerError()
+barf.arch.disassembler.DisassemblerError
+2024-05-02 15:50:08,965: barf.analysis.graphs.controlflowgraph:WARNING: Error while disassembling @ 0x5af
+Traceback (most recent call last):
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/analysis/graphs/controlflowgraph.py", line 294, in _disassemble_bb
+    asm = self._disasm.disassemble(data_chunk, addr)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/arch/x86/disassembler.py", line 72, in disassemble
+    raise DisassemblerError()
+barf.arch.disassembler.DisassemblerError

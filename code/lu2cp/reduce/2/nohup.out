@@ -1,0 +1,1680 @@
+successfully checked prereqs for pass_include_includes
+successfully checked prereqs for pass_unifdef
+successfully checked prereqs for pass_comments
+successfully checked prereqs for pass_ifs
+successfully checked prereqs for pass_includes
+successfully checked prereqs for pass_line_markers
+successfully checked prereqs for pass_blank
+successfully checked prereqs for pass_clang_binsrch
+successfully checked prereqs for pass_lines
+successfully checked prereqs for pass_special
+successfully checked prereqs for pass_ternary
+successfully checked prereqs for pass_balanced
+successfully checked prereqs for pass_clang
+successfully checked prereqs for pass_peep
+successfully checked prereqs for pass_ints
+successfully checked prereqs for pass_indent
+successfully checked prereqs for pass_clex
+
+sanity check... tmpdir = /tmp/creduce-4JrFuZ
+/home/zy/OptChecker/code/lu2cp/reduce/2
+rm: cannot remove '/home/zy/OptChecker/code/lu2cp/reduce/2/gcc_result.txt': No such file or directory
+rm: cannot remove '/home/zy/OptChecker/code/lu2cp/reduce/2/clang_result.txt': No such file or directory
+========================================================================
+/*
+yarpgen version 2.0 (build 0bfbe4f on 2024:04:29)
+Seed: 2537468148
+Invocation: /home/zy/OptChecker/yarpgen/build/yarpgen -o /home/zy/OptChecker/code/lu2cp/yarpgen_out
+*/
+#include "init.h"
+#include <algorithm>
+void test(int var_0, bool var_1, long long int var_2, unsigned short var_3, unsigned long long int var_4, long long int var_6, short var_7, bool var_9, int var_10, long long int var_11, bool var_12, unsigned char var_13, int zero, unsigned char arr_2 [19] [19] [19] , long long int arr_6 [19] [19] [19] [19] [19] , short arr_9 [19] [19] [19] [19] [19] , unsigned long long int arr_10 [19] , unsigned int arr_13 [16] , unsigned char arr_19 [16] [16] [16] [16] ) {
+    /* LoopNest 3 */
+    #pragma clang loop vectorize(enable)
+    #pragma clang loop interleave(enable)
+    for (int i_0 = ((((/* implicit */int) var_6)) - (348318917))/*0*/; i_0 < ((((/* implicit */int) (unsigned char)255)) - (236))/*19*/; i_0 += 4/*4*/) 
+    {
+        #pragma clang loop vectorize(enable)
+        #pragma clang loop unroll(enable)
+        for (long long int i_1 = ((((/* implicit */long long int) var_10)) - (2120600768LL))/*1*/; i_1 < 18LL/*18*/; i_1 += 3LL/*3*/) 
+        {
+            for (short i_2 = ((((/* implicit */int) ((/* implicit */short) var_9))) - (1))/*0*/; i_2 < (short)19/*19*/; i_2 += (short)2/*2*/) 
+            {
+                {
+                    /* LoopNest 2 */
+                    #pragma clang loop vectorize(enable)
+                    for (unsigned short i_3 = ((((/* implicit */int) ((/* implicit */unsigned short) var_13))) - (231))/*0*/; i_3 < (unsigned short)19/*19*/; i_3 += ((((/* implicit */int) ((/* implicit */unsigned short) var_11))) - (11185))/*3*/) 
+                    {
+                        for (short i_4 = (short)0/*0*/; i_4 < (short)19/*19*/; i_4 += (short)2/*2*/) 
+                        {
+                            {
+                                var_3 &= ((/* implicit */unsigned short) 4865933526215308472ULL);
+                                if (((/* implicit */bool) (short)-1393))
+                                {
+                                    var_4 = ((/* implicit */unsigned long long int) std::min((std::min((arr_6 [i_1 - 1] [i_1] [i_2] [(bool)1] [i_1]), (arr_6 [i_1 - 1] [i_3] [i_3] [12ULL] [i_4]))), (std::max((arr_6 [i_1 + 1] [i_1] [i_2] [i_3] [i_2]), (arr_6 [i_1 - 1] [15ULL] [15ULL] [i_3] [i_4])))));
+                                    var_2 = ((/* implicit */long long int) (bool)1);
+                                }
+
+                            }
+                        } 
+                    } 
+                    var_17 *= ((/* implicit */bool) std::min((32766), ((~(std::min((((/* implicit */int) arr_9 [16LL] [i_0] [i_0] [4ULL] [i_2])), (32766)))))));
+                }
+            } 
+        } 
+    } 
+    /* LoopNest 3 */
+    #pragma clang loop vectorize(enable)
+    #pragma clang loop unroll(enable)
+    #pragma clang loop interleave(enable)
+    #pragma clang loop vectorize_predicate(enable)
+    for (unsigned long long int i_5 = 0ULL/*0*/; i_5 < ((((/* implicit */unsigned long long int) var_17)) + (15ULL))/*16*/; i_5 += ((((/* implicit */unsigned long long int) (~(((long long int) var_0))))) - (18446744072042492864ULL))/*3*/) 
+    {
+        #pragma clang loop vectorize(enable)
+        #pragma clang loop interleave(enable)
+        for (bool i_6 = ((((/* implicit */int) ((/* implicit */bool) var_7))) - (1))/*0*/; i_6 < ((/* implicit */int) ((/* implicit */bool) 451166666U))/*1*/; i_6 += (bool)1/*1*/) 
+        {
+            #pragma clang loop interleave(enable)
+            for (unsigned char i_7 = (unsigned char)0/*0*/; i_7 < (unsigned char)16/*16*/; i_7 += ((((/* implicit */int) ((/* implicit */unsigned char) (bool)0))) + (1))/*1*/) 
+            {
+                {
+                    var_18 = ((/* implicit */unsigned char) std::max((var_18), (((/* implicit */unsigned char) (bool)1))));
+                    if (((/* implicit */bool) std::max((((((/* implicit */bool) arr_10 [i_6])) ? (18446744073709551615ULL) : (14096741067519610908ULL))), (std::max((((/* implicit */unsigned long long int) (short)27375)), (var_4))))))
+                    {
+                        /* LoopNest 2 */
+                        #pragma clang loop unroll(enable)
+                        #pragma clang loop interleave(enable)
+                        #pragma clang loop vectorize(enable)
+                        for (signed char i_8 = ((((/* implicit */int) ((/* implicit */signed char) var_9))) - (1))/*0*/; i_8 < (signed char)16/*16*/; i_8 += (signed char)4/*4*/) 
+                        {
+                            #pragma clang loop unroll(enable)
+                            #pragma clang loop vectorize_predicate(enable)
+                            for (unsigned long long int i_9 = 0ULL/*0*/; i_9 < ((((/* implicit */unsigned long long int) (+(((/* implicit */int) (!(((/* implicit */bool) -6069414501777405238LL)))))))) + (16ULL))/*16*/; i_9 += 3ULL/*3*/) 
+                            {
+                                {
+                                    var_12 = ((/* implicit */bool) std::min((var_12), ((bool)1)));
+                                    var_9 = ((/* implicit */bool) std::min((var_9), (((/* implicit */bool) ((((/* implicit */unsigned int) ((/* implicit */int) ((arr_13 [i_8]) <= (arr_13 [i_8]))))) + (std::max((arr_13 [i_8]), (((/* implicit */unsigned int) (bool)1)))))))));
+                                    var_21 &= std::min((((/* implicit */unsigned long long int) ((var_11) <= (((/* implicit */long long int) ((/* implicit */int) arr_19 [i_8] [i_6] [i_7] [(unsigned char)12])))))), ((+((~(4ULL))))));
+                                    var_2 = ((/* implicit */long long int) std::min((var_2), (((/* implicit */long long int) (bool)0))));
+                                }
+                            } 
+                        } 
+                        var_1 = ((/* implicit */bool) std::max((var_1), (((/* implicit */bool) ((((/* implicit */bool) var_0)) ? (std::min((((/* implicit */unsigned long long int) (((bool)0) ? (((/* implicit */unsigned int) ((/* implicit */int) (unsigned char)255))) : (4142025276U)))), (((unsigned long long int) var_7)))) : (17107918876148109402ULL))))));
+                        var_24 = ((/* implicit */bool) std::min((var_24), (((/* implicit */bool) ((((/* implicit */bool) ((unsigned char) 9223372036854775799LL))) ? (((((/* implicit */bool) std::max(((short)-32761), (((/* implicit */short) arr_2 [i_5] [i_6] [i_5]))))) ? (arr_10 [i_6]) : (1338825197561442213ULL))) : (((/* implicit */unsigned long long int) ((/* implicit */int) (!((!(((/* implicit */bool) arr_10 [i_6])))))))))))));
+                        var_25 = ((unsigned long long int) (bool)0);
+                    }
+
+                }
+            } 
+        } 
+    } 
+    var_26 = ((/* implicit */short) std::max((((unsigned long long int) ((((/* implicit */bool) -1)) ? (((/* implicit */long long int) ((/* implicit */int) var_12))) : (7137448686142380369LL)))), (((/* implicit */unsigned long long int) var_24))));
+}
+========================================================================
+rm: cannot remove '/home/zy/OptChecker/code/lu2cp/reduce/2/gcc_result.txt': No such file or directory
+Insertion for dst code....
+((/* implicit */bool) (short)-1393)
+((/* implicit */bool) std::max((((((/* implicit */bool) arr_10 [i_6])) ? (18446744073709551615ULL) : (14096741067519610908ULL))), (std::max((((/* implicit */unsigned long long int) (short)27375)), (var_4)))))
+5 warnings generated.
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:25:25: warning: myInsert0=((/* implicit */bool) (short)-1393);
+ [misc-lu2cp]
+   25 |                         for (short i_4 = (short)0/*0*/; i_4 < (short)19/*19*/; i_4 += (short)2/*2*/) 
+      |                         ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:25:25: note: FIX-IT applied suggested code changes
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:29:33: warning: myMark0=((/* implicit */bool) (short)-1393);myMark0=myMark0-myInsert0;
+ [misc-lu2cp]
+   29 |                                 if (((/* implicit */bool) (short)-1393))
+      |                                 ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:29:33: note: FIX-IT applied suggested code changes
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:55:13: warning: myInsert1=((/* implicit */bool) std::max((((((/* implicit */bool) arr_10 [i_6])) ? (18446744073709551615ULL) : (14096741067519610908ULL))), (std::max((((/* implicit */unsigned long long int) (short)27375)), (var_4)))));
+ [misc-lu2cp]
+   55 |             for (unsigned char i_7 = (unsigned char)0/*0*/; i_7 < (unsigned char)16/*16*/; i_7 += ((((/* implicit */int) ((/* implicit */unsigned char) (bool)0))) + (1))/*1*/) 
+      |             ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:55:13: note: FIX-IT applied suggested code changes
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:59:21: warning: myMark1=((/* implicit */bool) std::max((((((/* implicit */bool) arr_10 [i_6])) ? (18446744073709551615ULL) : (14096741067519610908ULL))), (std::max((((/* implicit */unsigned long long int) (short)27375)), (var_4)))));myMark1=myMark1-myInsert1;
+ [misc-lu2cp]
+   59 |                     if (((/* implicit */bool) std::max((((((/* implicit */bool) arr_10 [i_6])) ? (18446744073709551615ULL) : (14096741067519610908ULL))), (std::max((((/* implicit */unsigned long long int) (short)27375)), (var_4))))))
+      |                     ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:59:21: note: FIX-IT applied suggested code changes
+clang-tidy applied 4 of 4 suggested fixes.
+Suppressed 1 warnings (1 with check filters).
+optimize code with gcc...
+check notOptimized...
+[+] Recovering program CFG...
+112 117
+118 127
+174 181
+231 248
+249 258
+259 265
+266 301
+302 317
+318 332
+378 413
+414 433
+434 452
+473 519
+520 587
+588 600
+601 613
+614 646
+647 648
+649 654
+655 656
+657 677
+678 697
+698 715
+716 729
+730 760
+761 798
+808 813
+814 820
+824 831
+[+] Recovering program CFG...
+199 204
+205 214
+267 274
+346 400
+401 422
+423 437
+438 484
+485 544
+552 558
+559 578
+579 600
+601 647
+648 660
+664 694
+695 750
+751 758
+759 815
+816 845
+846 888
+942 972
+981 1023
+1024 1090
+1091 1105
+1106 1123
+1124 1162
+1163 1164
+1165 1170
+1171 1172
+1173 1198
+1199 1223
+1224 1242
+1243 1266
+1267 1298
+1299 1336
+1342 1347
+1348 1354
+1360 1367
+0xcb:	jle	0x134
+0xd5:	jle	0xc7
+0x111:	jb	0x10b
+0x1b0:	ja	0x2f7
+0x21f:	jmp	0x259
+0x241:	jg	0x298
+0x257:	ja	0x2b7
+0x286:	jge	0x228
+0x293:	jmp	0x22f
+0x2b5:	jbe	0x259
+0x2e9:	jg	0x3ae
+0x2f2:	jmp	0x1e5
+0x32a:	jle	0x1a7
+0x348:	jle	0x191
+0x373:	jle	0x15a
+0x3c8:	jmp	0x330
+0x44c:	je	0x550
+0x489:	jb	0x493
+0x48b:	jb	0x493
+0x48d:	jae	0x53e
+0x4c2:	jle	0x443
+0x4d9:	je	0x4f3
+0x50d:	jne	0x400
+0x533:	jb	0x3d5
+0x53e:	jae	0x495
+0x546:	jmp	0x4af
+0x553:	jmp	0x464
+get result...
+
+
+
+[Missed opportunities for Opt1]:
+------------------------------------------
+    line	row
+------------------------------------------
+
+
+
+[Missed opportunities for Opt2]:
+------------------------------------------
+    line	row
+    59		25
+------------------------------------------
+rm: cannot remove '/home/zy/OptChecker/code/lu2cp/reduce/2/clang_result.txt': No such file or directory
+Insertion for dst code....
+((/* implicit */bool) (short)-1393)
+((/* implicit */bool) std::max((((((/* implicit */bool) arr_10 [i_6])) ? (18446744073709551615ULL) : (14096741067519610908ULL))), (std::max((((/* implicit */unsigned long long int) (short)27375)), (var_4)))))
+5 warnings generated.
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:25:25: warning: myInsert0=((/* implicit */bool) (short)-1393);
+ [misc-lu2cp]
+   25 |                         for (short i_4 = (short)0/*0*/; i_4 < (short)19/*19*/; i_4 += (short)2/*2*/) 
+      |                         ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:25:25: note: FIX-IT applied suggested code changes
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:29:33: warning: myMark0=((/* implicit */bool) (short)-1393);myMark0=myMark0-myInsert0;
+ [misc-lu2cp]
+   29 |                                 if (((/* implicit */bool) (short)-1393))
+      |                                 ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:29:33: note: FIX-IT applied suggested code changes
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:55:13: warning: myInsert1=((/* implicit */bool) std::max((((((/* implicit */bool) arr_10 [i_6])) ? (18446744073709551615ULL) : (14096741067519610908ULL))), (std::max((((/* implicit */unsigned long long int) (short)27375)), (var_4)))));
+ [misc-lu2cp]
+   55 |             for (unsigned char i_7 = (unsigned char)0/*0*/; i_7 < (unsigned char)16/*16*/; i_7 += ((((/* implicit */int) ((/* implicit */unsigned char) (bool)0))) + (1))/*1*/) 
+      |             ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:55:13: note: FIX-IT applied suggested code changes
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:59:21: warning: myMark1=((/* implicit */bool) std::max((((((/* implicit */bool) arr_10 [i_6])) ? (18446744073709551615ULL) : (14096741067519610908ULL))), (std::max((((/* implicit */unsigned long long int) (short)27375)), (var_4)))));myMark1=myMark1-myInsert1;
+ [misc-lu2cp]
+   59 |                     if (((/* implicit */bool) std::max((((((/* implicit */bool) arr_10 [i_6])) ? (18446744073709551615ULL) : (14096741067519610908ULL))), (std::max((((/* implicit */unsigned long long int) (short)27375)), (var_4))))))
+      |                     ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:59:21: note: FIX-IT applied suggested code changes
+clang-tidy applied 4 of 4 suggested fixes.
+Suppressed 1 warnings (1 with check filters).
+optimize code with clang...
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:57:13: error: expected a for, while, or do-while loop to follow '#pragma clang loop'
+   57 |             myInsert1=((/* implicit */bool) std::max((((((/* implicit */bool) arr_10 [i_6])) ? (18446744073709551615ULL) : (14096741067519610908ULL))), (std::max((((/* implicit */unsigned long long int) (short)27375)), (var_4)))));
+      |             ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:77:177: warning: self-comparison always evaluates to true [-Wtautological-compare]
+   77 |                                     var_9 = ((/* implicit */bool) std::min((var_9), (((/* implicit */bool) ((((/* implicit */unsigned int) ((/* implicit */int) ((arr_13 [i_8]) <= (arr_13 [i_8]))))) + (std::max((arr_13 [i_8]), (((/* implicit */unsigned int) (bool)1)))))))));
+      |                                                                                                                                                                                 ^
+1 warning and 1 error generated.
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:73:177: warning: self-comparison always evaluates to true [-Wtautological-compare]
+   73 |                                     var_9 = ((/* implicit */bool) std::min((var_9), (((/* implicit */bool) ((((/* implicit */unsigned int) ((/* implicit */int) ((arr_13 [i_8]) <= (arr_13 [i_8]))))) + (std::max((arr_13 [i_8]), (((/* implicit */unsigned int) (bool)1)))))))));
+      |                                                                                                                                                                                 ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:12:5: warning: loop not vectorized: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+   12 |     for (int i_0 = ((((/* implicit */int) var_6)) - (348318917))/*0*/; i_0 < ((((/* implicit */int) (unsigned char)255)) - (236))/*19*/; i_0 += 4/*4*/) 
+      |     ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:16:9: warning: loop not vectorized: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+   16 |         for (long long int i_1 = ((((/* implicit */long long int) var_10)) - (2120600768LL))/*1*/; i_1 < 18LL/*18*/; i_1 += 3LL/*3*/) 
+      |         ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:12:5: warning: loop not vectorized: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+   12 |     for (int i_0 = ((((/* implicit */int) var_6)) - (348318917))/*0*/; i_0 < ((((/* implicit */int) (unsigned char)255)) - (236))/*19*/; i_0 += 4/*4*/) 
+      |     ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:16:9: warning: loop not vectorized: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+   16 |         for (long long int i_1 = ((((/* implicit */long long int) var_10)) - (2120600768LL))/*1*/; i_1 < 18LL/*18*/; i_1 += 3LL/*3*/) 
+      |         ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:48:5: warning: loop not vectorized: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+   48 |     for (unsigned long long int i_5 = 0ULL/*0*/; i_5 < ((((/* implicit */unsigned long long int) var_17)) + (15ULL))/*16*/; i_5 += ((((/* implicit */unsigned long long int) (~(((long long int) var_0))))) - (18446744072042492864ULL))/*3*/) 
+      |     ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:55:13: warning: loop not vectorized: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+   55 |             for (unsigned char i_7 = (unsigned char)0/*0*/; i_7 < (unsigned char)16/*16*/; i_7 += ((((/* implicit */int) ((/* implicit */unsigned char) (bool)0))) + (1))/*1*/) 
+      |             ^
+7 warnings generated.
+[31m     Compiler Error!  Skip...[0m
+successful
+===< 413695 >===
+running 1 interestingness test in parallel
+INITIAL PASSES
+
+===< pass_unifdef :: 0 >===
+index = 0
+index = 0
+
+===< pass_comments :: 0 >===
+/home/zy/OptChecker/code/lu2cp/reduce/2
+rm: cannot remove '/home/zy/OptChecker/code/lu2cp/reduce/2/clang_result.txt': No such file or directory
+========================================================================
+
+#include "init.h"
+#include <algorithm>
+void test(int var_0, bool var_1, long long int var_2, unsigned short var_3, unsigned long long int var_4, long long int var_6, short var_7, bool var_9, int var_10, long long int var_11, bool var_12, unsigned char var_13, int zero, unsigned char arr_2 [19] [19] [19] , long long int arr_6 [19] [19] [19] [19] [19] , short arr_9 [19] [19] [19] [19] [19] , unsigned long long int arr_10 [19] , unsigned int arr_13 [16] , unsigned char arr_19 [16] [16] [16] [16] ) {
+    
+    #pragma clang loop vectorize(enable)
+    #pragma clang loop interleave(enable)
+    for (int i_0 = ((((int) var_6)) - (348318917)); i_0 < ((((int) (unsigned char)255)) - (236)); i_0 += 4) 
+    {
+        #pragma clang loop vectorize(enable)
+        #pragma clang loop unroll(enable)
+        for (long long int i_1 = ((((long long int) var_10)) - (2120600768LL)); i_1 < 18LL; i_1 += 3LL) 
+        {
+            for (short i_2 = ((((int) ((short) var_9))) - (1)); i_2 < (short)19; i_2 += (short)2) 
+            {
+                {
+                    
+                    #pragma clang loop vectorize(enable)
+                    for (unsigned short i_3 = ((((int) ((unsigned short) var_13))) - (231)); i_3 < (unsigned short)19; i_3 += ((((int) ((unsigned short) var_11))) - (11185))) 
+                    {
+                        for (short i_4 = (short)0; i_4 < (short)19; i_4 += (short)2) 
+                        {
+                            {
+                                var_3 &= ((unsigned short) 4865933526215308472ULL);
+                                if (((bool) (short)-1393))
+                                {
+                                    var_4 = ((unsigned long long int) std::min((std::min((arr_6 [i_1 - 1] [i_1] [i_2] [(bool)1] [i_1]), (arr_6 [i_1 - 1] [i_3] [i_3] [12ULL] [i_4]))), (std::max((arr_6 [i_1 + 1] [i_1] [i_2] [i_3] [i_2]), (arr_6 [i_1 - 1] [15ULL] [15ULL] [i_3] [i_4])))));
+                                    var_2 = ((long long int) (bool)1);
+                                }
+
+                            }
+                        } 
+                    } 
+                    var_17 *= ((bool) std::min((32766), ((~(std::min((((int) arr_9 [16LL] [i_0] [i_0] [4ULL] [i_2])), (32766)))))));
+                }
+            } 
+        } 
+    } 
+    
+    #pragma clang loop vectorize(enable)
+    #pragma clang loop unroll(enable)
+    #pragma clang loop interleave(enable)
+    #pragma clang loop vectorize_predicate(enable)
+    for (unsigned long long int i_5 = 0ULL; i_5 < ((((unsigned long long int) var_17)) + (15ULL)); i_5 += ((((unsigned long long int) (~(((long long int) var_0))))) - (18446744072042492864ULL))) 
+    {
+        #pragma clang loop vectorize(enable)
+        #pragma clang loop interleave(enable)
+        for (bool i_6 = ((((int) ((bool) var_7))) - (1)); i_6 < ((int) ((bool) 451166666U)); i_6 += (bool)1) 
+        {
+            #pragma clang loop interleave(enable)
+            for (unsigned char i_7 = (unsigned char)0; i_7 < (unsigned char)16; i_7 += ((((int) ((unsigned char) (bool)0))) + (1))) 
+            {
+                {
+                    var_18 = ((unsigned char) std::max((var_18), (((unsigned char) (bool)1))));
+                    if (((bool) std::max((((((bool) arr_10 [i_6])) ? (18446744073709551615ULL) : (14096741067519610908ULL))), (std::max((((unsigned long long int) (short)27375)), (var_4))))))
+                    {
+                        
+                        #pragma clang loop unroll(enable)
+                        #pragma clang loop interleave(enable)
+                        #pragma clang loop vectorize(enable)
+                        for (signed char i_8 = ((((int) ((signed char) var_9))) - (1)); i_8 < (signed char)16; i_8 += (signed char)4) 
+                        {
+                            #pragma clang loop unroll(enable)
+                            #pragma clang loop vectorize_predicate(enable)
+                            for (unsigned long long int i_9 = 0ULL; i_9 < ((((unsigned long long int) (+(((int) (!(((bool) -6069414501777405238LL)))))))) + (16ULL)); i_9 += 3ULL) 
+                            {
+                                {
+                                    var_12 = ((bool) std::min((var_12), ((bool)1)));
+                                    var_9 = ((bool) std::min((var_9), (((bool) ((((unsigned int) ((int) ((arr_13 [i_8]) <= (arr_13 [i_8]))))) + (std::max((arr_13 [i_8]), (((unsigned int) (bool)1)))))))));
+                                    var_21 &= std::min((((unsigned long long int) ((var_11) <= (((long long int) ((int) arr_19 [i_8] [i_6] [i_7] [(unsigned char)12])))))), ((+((~(4ULL))))));
+                                    var_2 = ((long long int) std::min((var_2), (((long long int) (bool)0))));
+                                }
+                            } 
+                        } 
+                        var_1 = ((bool) std::max((var_1), (((bool) ((((bool) var_0)) ? (std::min((((unsigned long long int) (((bool)0) ? (((unsigned int) ((int) (unsigned char)255))) : (4142025276U)))), (((unsigned long long int) var_7)))) : (17107918876148109402ULL))))));
+                        var_24 = ((bool) std::min((var_24), (((bool) ((((bool) ((unsigned char) 9223372036854775799LL))) ? (((((bool) std::max(((short)-32761), (((short) arr_2 [i_5] [i_6] [i_5]))))) ? (arr_10 [i_6]) : (1338825197561442213ULL))) : (((unsigned long long int) ((int) (!((!(((bool) arr_10 [i_6])))))))))))));
+                        var_25 = ((unsigned long long int) (bool)0);
+                    }
+
+                }
+            } 
+        } 
+    } 
+    var_26 = ((short) std::max((((unsigned long long int) ((((bool) -1)) ? (((long long int) ((int) var_12))) : (7137448686142380369LL)))), (((unsigned long long int) var_24))));
+}
+========================================================================
+rm: cannot remove '/home/zy/OptChecker/code/lu2cp/reduce/2/gcc_result.txt': No such file or directory
+Insertion for dst code....
+((bool) (short)-1393)
+((bool) std::max((((((bool) arr_10 [i_6])) ? (18446744073709551615ULL) : (14096741067519610908ULL))), (std::max((((unsigned long long int) (short)27375)), (var_4)))))
+5 warnings generated.
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:21:25: warning: myInsert0=((bool) (short)-1393);
+ [misc-lu2cp]
+   21 |                         for (short i_4 = (short)0; i_4 < (short)19; i_4 += (short)2) 
+      |                         ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:21:25: note: FIX-IT applied suggested code changes
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:25:33: warning: myMark0=((bool) (short)-1393);myMark0=myMark0-myInsert0;
+ [misc-lu2cp]
+   25 |                                 if (((bool) (short)-1393))
+      |                                 ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:25:33: note: FIX-IT applied suggested code changes
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:51:13: warning: myInsert1=((bool) std::max((((((bool) arr_10 [i_6])) ? (18446744073709551615ULL) : (14096741067519610908ULL))), (std::max((((unsigned long long int) (short)27375)), (var_4)))));
+ [misc-lu2cp]
+   51 |             for (unsigned char i_7 = (unsigned char)0; i_7 < (unsigned char)16; i_7 += ((((int) ((unsigned char) (bool)0))) + (1))) 
+      |             ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:51:13: note: FIX-IT applied suggested code changes
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:55:21: warning: myMark1=((bool) std::max((((((bool) arr_10 [i_6])) ? (18446744073709551615ULL) : (14096741067519610908ULL))), (std::max((((unsigned long long int) (short)27375)), (var_4)))));myMark1=myMark1-myInsert1;
+ [misc-lu2cp]
+   55 |                     if (((bool) std::max((((((bool) arr_10 [i_6])) ? (18446744073709551615ULL) : (14096741067519610908ULL))), (std::max((((unsigned long long int) (short)27375)), (var_4))))))
+      |                     ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:55:21: note: FIX-IT applied suggested code changes
+clang-tidy applied 4 of 4 suggested fixes.
+Suppressed 1 warnings (1 with check filters).
+optimize code with gcc...
+check notOptimized...
+[+] Recovering program CFG...
+112 117
+118 127
+174 181
+231 248
+249 258
+259 265
+266 301
+302 317
+318 332
+378 413
+414 433
+434 452
+473 519
+520 587
+588 600
+601 613
+614 646
+647 648
+649 654
+655 656
+657 677
+678 697
+698 715
+716 729
+730 760
+761 798
+808 813
+814 820
+824 831
+[+] Recovering program CFG...
+199 204
+205 214
+267 274
+346 400
+401 422
+423 437
+438 484
+485 544
+552 558
+559 578
+579 600
+601 647
+648 660
+664 694
+695 750
+751 758
+759 815
+816 845
+846 888
+942 972
+981 1023
+1024 1090
+1091 1105
+1106 1123
+1124 1162
+1163 1164
+1165 1170
+1171 1172
+1173 1198
+1199 1223
+1224 1242
+1243 1266
+1267 1298
+1299 1336
+1342 1347
+1348 1354
+1360 1367
+0xcb:	jle	0x134
+0xd5:	jle	0xc7
+0x111:	jb	0x10b
+0x1b0:	ja	0x2f7
+0x21f:	jmp	0x259
+0x241:	jg	0x298
+0x257:	ja	0x2b7
+0x286:	jge	0x228
+0x293:	jmp	0x22f
+0x2b5:	jbe	0x259
+0x2e9:	jg	0x3ae
+0x2f2:	jmp	0x1e5
+0x32a:	jle	0x1a7
+0x348:	jle	0x191
+0x373:	jle	0x15a
+0x3c8:	jmp	0x330
+0x44c:	je	0x550
+0x489:	jb	0x493
+0x48b:	jb	0x493
+0x48d:	jae	0x53e
+0x4c2:	jle	0x443
+0x4d9:	je	0x4f3
+0x50d:	jne	0x400
+0x533:	jb	0x3d5
+0x53e:	jae	0x495
+0x546:	jmp	0x4af
+0x553:	jmp	0x464
+get result...
+
+
+
+[Missed opportunities for Opt1]:
+------------------------------------------
+    line	row
+------------------------------------------
+
+
+
+[Missed opportunities for Opt2]:
+------------------------------------------
+    line	row
+    55		25
+------------------------------------------
+rm: cannot remove '/home/zy/OptChecker/code/lu2cp/reduce/2/clang_result.txt': No such file or directory
+Insertion for dst code....
+((bool) (short)-1393)
+((bool) std::max((((((bool) arr_10 [i_6])) ? (18446744073709551615ULL) : (14096741067519610908ULL))), (std::max((((unsigned long long int) (short)27375)), (var_4)))))
+5 warnings generated.
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:21:25: warning: myInsert0=((bool) (short)-1393);
+ [misc-lu2cp]
+   21 |                         for (short i_4 = (short)0; i_4 < (short)19; i_4 += (short)2) 
+      |                         ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:21:25: note: FIX-IT applied suggested code changes
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:25:33: warning: myMark0=((bool) (short)-1393);myMark0=myMark0-myInsert0;
+ [misc-lu2cp]
+   25 |                                 if (((bool) (short)-1393))
+      |                                 ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:25:33: note: FIX-IT applied suggested code changes
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:51:13: warning: myInsert1=((bool) std::max((((((bool) arr_10 [i_6])) ? (18446744073709551615ULL) : (14096741067519610908ULL))), (std::max((((unsigned long long int) (short)27375)), (var_4)))));
+ [misc-lu2cp]
+   51 |             for (unsigned char i_7 = (unsigned char)0; i_7 < (unsigned char)16; i_7 += ((((int) ((unsigned char) (bool)0))) + (1))) 
+      |             ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:51:13: note: FIX-IT applied suggested code changes
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:55:21: warning: myMark1=((bool) std::max((((((bool) arr_10 [i_6])) ? (18446744073709551615ULL) : (14096741067519610908ULL))), (std::max((((unsigned long long int) (short)27375)), (var_4)))));myMark1=myMark1-myInsert1;
+ [misc-lu2cp]
+   55 |                     if (((bool) std::max((((((bool) arr_10 [i_6])) ? (18446744073709551615ULL) : (14096741067519610908ULL))), (std::max((((unsigned long long int) (short)27375)), (var_4))))))
+      |                     ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:55:21: note: FIX-IT applied suggested code changes
+clang-tidy applied 4 of 4 suggested fixes.
+Suppressed 1 warnings (1 with check filters).
+optimize code with clang...
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:53:13: error: expected a for, while, or do-while loop to follow '#pragma clang loop'
+   53 |             myInsert1=((bool) std::max((((((bool) arr_10 [i_6])) ? (18446744073709551615ULL) : (14096741067519610908ULL))), (std::max((((unsigned long long int) (short)27375)), (var_4)))));
+      |             ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:73:121: warning: self-comparison always evaluates to true [-Wtautological-compare]
+   73 |                                     var_9 = ((bool) std::min((var_9), (((bool) ((((unsigned int) ((int) ((arr_13 [i_8]) <= (arr_13 [i_8]))))) + (std::max((arr_13 [i_8]), (((unsigned int) (bool)1)))))))));
+      |                                                                                                                         ^
+1 warning and 1 error generated.
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:69:121: warning: self-comparison always evaluates to true [-Wtautological-compare]
+   69 |                                     var_9 = ((bool) std::min((var_9), (((bool) ((((unsigned int) ((int) ((arr_13 [i_8]) <= (arr_13 [i_8]))))) + (std::max((arr_13 [i_8]), (((unsigned int) (bool)1)))))))));
+      |                                                                                                                         ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:8:5: warning: loop not vectorized: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+    8 |     for (int i_0 = ((((int) var_6)) - (348318917)); i_0 < ((((int) (unsigned char)255)) - (236)); i_0 += 4) 
+      |     ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:12:9: warning: loop not vectorized: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+   12 |         for (long long int i_1 = ((((long long int) var_10)) - (2120600768LL)); i_1 < 18LL; i_1 += 3LL) 
+      |         ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:8:5: warning: loop not vectorized: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+    8 |     for (int i_0 = ((((int) var_6)) - (348318917)); i_0 < ((((int) (unsigned char)255)) - (236)); i_0 += 4) 
+      |     ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:12:9: warning: loop not vectorized: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+   12 |         for (long long int i_1 = ((((long long int) var_10)) - (2120600768LL)); i_1 < 18LL; i_1 += 3LL) 
+      |         ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:44:5: warning: loop not vectorized: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+   44 |     for (unsigned long long int i_5 = 0ULL; i_5 < ((((unsigned long long int) var_17)) + (15ULL)); i_5 += ((((unsigned long long int) (~(((long long int) var_0))))) - (18446744072042492864ULL))) 
+      |     ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:51:13: warning: loop not vectorized: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+   51 |             for (unsigned char i_7 = (unsigned char)0; i_7 < (unsigned char)16; i_7 += ((((int) ((unsigned char) (bool)0))) + (1))) 
+      |             ^
+7 warnings generated.
+[31m     Compiler Error!  Skip...[0m
+delta_test() returned 1
+delta test success (17.7 %, 5923 bytes)
+[0 pass_comments :: 0] did not change file
+did not change file
+did not change file
+did not change file
+
+===< pass_ifs :: 0 >===
+***TRANSFORM START***
+***TRANSFORM START***
+
+===< pass_includes :: 0 >===
+/home/zy/OptChecker/code/lu2cp/reduce/2
+rm: cannot remove '/home/zy/OptChecker/code/lu2cp/reduce/2/clang_result.txt': No such file or directory
+========================================================================
+
+#include <algorithm>
+void test(int var_0, bool var_1, long long int var_2, unsigned short var_3, unsigned long long int var_4, long long int var_6, short var_7, bool var_9, int var_10, long long int var_11, bool var_12, unsigned char var_13, int zero, unsigned char arr_2 [19] [19] [19] , long long int arr_6 [19] [19] [19] [19] [19] , short arr_9 [19] [19] [19] [19] [19] , unsigned long long int arr_10 [19] , unsigned int arr_13 [16] , unsigned char arr_19 [16] [16] [16] [16] ) {
+    
+    #pragma clang loop vectorize(enable)
+    #pragma clang loop interleave(enable)
+    for (int i_0 = ((((int) var_6)) - (348318917)); i_0 < ((((int) (unsigned char)255)) - (236)); i_0 += 4) 
+    {
+        #pragma clang loop vectorize(enable)
+        #pragma clang loop unroll(enable)
+        for (long long int i_1 = ((((long long int) var_10)) - (2120600768LL)); i_1 < 18LL; i_1 += 3LL) 
+        {
+            for (short i_2 = ((((int) ((short) var_9))) - (1)); i_2 < (short)19; i_2 += (short)2) 
+            {
+                {
+                    
+                    #pragma clang loop vectorize(enable)
+                    for (unsigned short i_3 = ((((int) ((unsigned short) var_13))) - (231)); i_3 < (unsigned short)19; i_3 += ((((int) ((unsigned short) var_11))) - (11185))) 
+                    {
+                        for (short i_4 = (short)0; i_4 < (short)19; i_4 += (short)2) 
+                        {
+                            {
+                                var_3 &= ((unsigned short) 4865933526215308472ULL);
+                                if (((bool) (short)-1393))
+                                {
+                                    var_4 = ((unsigned long long int) std::min((std::min((arr_6 [i_1 - 1] [i_1] [i_2] [(bool)1] [i_1]), (arr_6 [i_1 - 1] [i_3] [i_3] [12ULL] [i_4]))), (std::max((arr_6 [i_1 + 1] [i_1] [i_2] [i_3] [i_2]), (arr_6 [i_1 - 1] [15ULL] [15ULL] [i_3] [i_4])))));
+                                    var_2 = ((long long int) (bool)1);
+                                }
+
+                            }
+                        } 
+                    } 
+                    var_17 *= ((bool) std::min((32766), ((~(std::min((((int) arr_9 [16LL] [i_0] [i_0] [4ULL] [i_2])), (32766)))))));
+                }
+            } 
+        } 
+    } 
+    
+    #pragma clang loop vectorize(enable)
+    #pragma clang loop unroll(enable)
+    #pragma clang loop interleave(enable)
+    #pragma clang loop vectorize_predicate(enable)
+    for (unsigned long long int i_5 = 0ULL; i_5 < ((((unsigned long long int) var_17)) + (15ULL)); i_5 += ((((unsigned long long int) (~(((long long int) var_0))))) - (18446744072042492864ULL))) 
+    {
+        #pragma clang loop vectorize(enable)
+        #pragma clang loop interleave(enable)
+        for (bool i_6 = ((((int) ((bool) var_7))) - (1)); i_6 < ((int) ((bool) 451166666U)); i_6 += (bool)1) 
+        {
+            #pragma clang loop interleave(enable)
+            for (unsigned char i_7 = (unsigned char)0; i_7 < (unsigned char)16; i_7 += ((((int) ((unsigned char) (bool)0))) + (1))) 
+            {
+                {
+                    var_18 = ((unsigned char) std::max((var_18), (((unsigned char) (bool)1))));
+                    if (((bool) std::max((((((bool) arr_10 [i_6])) ? (18446744073709551615ULL) : (14096741067519610908ULL))), (std::max((((unsigned long long int) (short)27375)), (var_4))))))
+                    {
+                        
+                        #pragma clang loop unroll(enable)
+                        #pragma clang loop interleave(enable)
+                        #pragma clang loop vectorize(enable)
+                        for (signed char i_8 = ((((int) ((signed char) var_9))) - (1)); i_8 < (signed char)16; i_8 += (signed char)4) 
+                        {
+                            #pragma clang loop unroll(enable)
+                            #pragma clang loop vectorize_predicate(enable)
+                            for (unsigned long long int i_9 = 0ULL; i_9 < ((((unsigned long long int) (+(((int) (!(((bool) -6069414501777405238LL)))))))) + (16ULL)); i_9 += 3ULL) 
+                            {
+                                {
+                                    var_12 = ((bool) std::min((var_12), ((bool)1)));
+                                    var_9 = ((bool) std::min((var_9), (((bool) ((((unsigned int) ((int) ((arr_13 [i_8]) <= (arr_13 [i_8]))))) + (std::max((arr_13 [i_8]), (((unsigned int) (bool)1)))))))));
+                                    var_21 &= std::min((((unsigned long long int) ((var_11) <= (((long long int) ((int) arr_19 [i_8] [i_6] [i_7] [(unsigned char)12])))))), ((+((~(4ULL))))));
+                                    var_2 = ((long long int) std::min((var_2), (((long long int) (bool)0))));
+                                }
+                            } 
+                        } 
+                        var_1 = ((bool) std::max((var_1), (((bool) ((((bool) var_0)) ? (std::min((((unsigned long long int) (((bool)0) ? (((unsigned int) ((int) (unsigned char)255))) : (4142025276U)))), (((unsigned long long int) var_7)))) : (17107918876148109402ULL))))));
+                        var_24 = ((bool) std::min((var_24), (((bool) ((((bool) ((unsigned char) 9223372036854775799LL))) ? (((((bool) std::max(((short)-32761), (((short) arr_2 [i_5] [i_6] [i_5]))))) ? (arr_10 [i_6]) : (1338825197561442213ULL))) : (((unsigned long long int) ((int) (!((!(((bool) arr_10 [i_6])))))))))))));
+                        var_25 = ((unsigned long long int) (bool)0);
+                    }
+
+                }
+            } 
+        } 
+    } 
+    var_26 = ((short) std::max((((unsigned long long int) ((((bool) -1)) ? (((long long int) ((int) var_12))) : (7137448686142380369LL)))), (((unsigned long long int) var_24))));
+}
+========================================================================
+rm: cannot remove '/home/zy/OptChecker/code/lu2cp/reduce/2/gcc_result.txt': No such file or directory
+Insertion for dst code....
+((bool) (short)-1393)
+((bool) std::max((((((bool) arr_10 [i_6])) ? (18446744073709551615ULL) : (14096741067519610908ULL))), (std::max((((unsigned long long int) (short)27375)), (var_4)))))
+5 warnings and 10 errors generated.
+Error while processing /home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp.
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:20:25: warning: myInsert0=((bool) (short)-1393);
+ [misc-lu2cp]
+   20 |                         for (short i_4 = (short)0; i_4 < (short)19; i_4 += (short)2) 
+      |                         ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:24:33: warning: myMark0=((bool) (short)-1393);myMark0=myMark0-myInsert0;
+ [misc-lu2cp]
+   24 |                                 if (((bool) (short)-1393))
+      |                                 ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:33:21: error: use of undeclared identifier 'var_17' [clang-diagnostic-error]
+   33 |                     var_17 *= ((bool) std::min((32766), ((~(std::min((((int) arr_9 [16LL] [i_0] [i_0] [4ULL] [i_2])), (32766)))))));
+      |                     ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:43:79: error: use of undeclared identifier 'var_17' [clang-diagnostic-error]
+   43 |     for (unsigned long long int i_5 = 0ULL; i_5 < ((((unsigned long long int) var_17)) + (15ULL)); i_5 += ((((unsigned long long int) (~(((long long int) var_0))))) - (18446744072042492864ULL))) 
+      |                                                                               ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:50:13: warning: myInsert1=((bool) std::max((((((bool) arr_10 [i_6])) ? (18446744073709551615ULL) : (14096741067519610908ULL))), (std::max((((unsigned long long int) (short)27375)), (var_4)))));
+ [misc-lu2cp]
+   50 |             for (unsigned char i_7 = (unsigned char)0; i_7 < (unsigned char)16; i_7 += ((((int) ((unsigned char) (bool)0))) + (1))) 
+      |             ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:53:21: error: use of undeclared identifier 'var_18' [clang-diagnostic-error]
+   53 |                     var_18 = ((unsigned char) std::max((var_18), (((unsigned char) (bool)1))));
+      |                     ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:53:57: error: use of undeclared identifier 'var_18' [clang-diagnostic-error]
+   53 |                     var_18 = ((unsigned char) std::max((var_18), (((unsigned char) (bool)1))));
+      |                                                         ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:54:21: warning: myMark1=((bool) std::max((((((bool) arr_10 [i_6])) ? (18446744073709551615ULL) : (14096741067519610908ULL))), (std::max((((unsigned long long int) (short)27375)), (var_4)))));myMark1=myMark1-myInsert1;
+ [misc-lu2cp]
+   54 |                     if (((bool) std::max((((((bool) arr_10 [i_6])) ? (18446744073709551615ULL) : (14096741067519610908ULL))), (std::max((((unsigned long long int) (short)27375)), (var_4))))))
+      |                     ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:69:37: error: use of undeclared identifier 'var_21' [clang-diagnostic-error]
+   69 |                                     var_21 &= std::min((((unsigned long long int) ((var_11) <= (((long long int) ((int) arr_19 [i_8] [i_6] [i_7] [(unsigned char)12])))))), ((+((~(4ULL))))));
+      |                                     ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:75:25: error: use of undeclared identifier 'var_24' [clang-diagnostic-error]
+   75 |                         var_24 = ((bool) std::min((var_24), (((bool) ((((bool) ((unsigned char) 9223372036854775799LL))) ? (((((bool) std::max(((short)-32761), (((short) arr_2 [i_5] [i_6] [i_5]))))) ? (arr_10 [i_6]) : (1338825197561442213ULL))) : (((unsigned long long int) ((int) (!((!(((bool) arr_10 [i_6])))))))))))));
+      |                         ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:75:52: error: use of undeclared identifier 'var_24' [clang-diagnostic-error]
+   75 |                         var_24 = ((bool) std::min((var_24), (((bool) ((((bool) ((unsigned char) 9223372036854775799LL))) ? (((((bool) std::max(((short)-32761), (((short) arr_2 [i_5] [i_6] [i_5]))))) ? (arr_10 [i_6]) : (1338825197561442213ULL))) : (((unsigned long long int) ((int) (!((!(((bool) arr_10 [i_6])))))))))))));
+      |                                                    ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:76:25: error: use of undeclared identifier 'var_25'; did you mean 'var_2'? [clang-diagnostic-error]
+   76 |                         var_25 = ((unsigned long long int) (bool)0);
+      |                         ^~~~~~
+      |                         var_2
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:3:48: note: 'var_2' declared here
+    3 | void test(int var_0, bool var_1, long long int var_2, unsigned short var_3, unsigned long long int var_4, long long int var_6, short var_7, bool var_9, int var_10, long long int var_11, bool var_12, unsigned char var_13, int zero, unsigned char arr_2 [19] [19] [19] , long long int arr_6 [19] [19] [19] [19] [19] , short arr_9 [19] [19] [19] [19] [19] , unsigned long long int arr_10 [19] , unsigned int arr_13 [16] , unsigned char arr_19 [16] [16] [16] [16] ) {
+      |                                                ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:83:5: error: use of undeclared identifier 'var_26' [clang-diagnostic-error]
+   83 |     var_26 = ((short) std::max((((unsigned long long int) ((((bool) -1)) ? (((long long int) ((int) var_12))) : (7137448686142380369LL)))), (((unsigned long long int) var_24))));
+      |     ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:83:168: error: use of undeclared identifier 'var_24' [clang-diagnostic-error]
+   83 |     var_26 = ((short) std::max((((unsigned long long int) ((((bool) -1)) ? (((long long int) ((int) var_12))) : (7137448686142380369LL)))), (((unsigned long long int) var_24))));
+      |                                                                                                                                                                        ^
+Suppressed 1 warnings (1 with check filters).
+Found compiler errors, but -fix-errors was not specified.
+Fixes have NOT been applied.
+
+Found compiler error(s).
+optimize code with gcc...
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp: In function ‘void test(int, bool, long long int, short unsigned int, long long unsigned int, long long int, short int, bool, int, long long int, bool, unsigned char, int, unsigned char (*)[19][19], long long int (*)[19][19][19][19], short int (*)[19][19][19][19], long long unsigned int*, unsigned int*, unsigned char (*)[16][16][16])’:
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:33:21: error: ‘var_17’ was not declared in this scope; did you mean ‘var_1’?
+   33 |                     var_17 *= ((bool) std::min((32766), ((~(std::min((((int) arr_9 [16LL] [i_0] [i_0] [4ULL] [i_2])), (32766)))))));
+      |                     ^~~~~~
+      |                     var_1
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:43:79: error: ‘var_17’ was not declared in this scope; did you mean ‘var_1’?
+   43 |     for (unsigned long long int i_5 = 0ULL; i_5 < ((((unsigned long long int) var_17)) + (15ULL)); i_5 += ((((unsigned long long int) (~(((long long int) var_0))))) - (18446744072042492864ULL)))
+      |                                                                               ^~~~~~
+      |                                                                               var_1
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:53:21: error: ‘var_18’ was not declared in this scope; did you mean ‘var_1’?
+   53 |                     var_18 = ((unsigned char) std::max((var_18), (((unsigned char) (bool)1))));
+      |                     ^~~~~~
+      |                     var_1
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:69:37: error: ‘var_21’ was not declared in this scope; did you mean ‘var_1’?
+   69 |                                     var_21 &= std::min((((unsigned long long int) ((var_11) <= (((long long int) ((int) arr_19 [i_8] [i_6] [i_7] [(unsigned char)12])))))), ((+((~(4ULL))))));
+      |                                     ^~~~~~
+      |                                     var_1
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:75:25: error: ‘var_24’ was not declared in this scope; did you mean ‘var_2’?
+   75 |                         var_24 = ((bool) std::min((var_24), (((bool) ((((bool) ((unsigned char) 9223372036854775799LL))) ? (((((bool) std::max(((short)-32761), (((short) arr_2 [i_5] [i_6] [i_5]))))) ? (arr_10 [i_6]) : (1338825197561442213ULL))) : (((unsigned long long int) ((int) (!((!(((bool) arr_10 [i_6])))))))))))));
+      |                         ^~~~~~
+      |                         var_2
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:76:25: error: ‘var_25’ was not declared in this scope; did you mean ‘var_2’?
+   76 |                         var_25 = ((unsigned long long int) (bool)0);
+      |                         ^~~~~~
+      |                         var_2
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:83:5: error: ‘var_26’ was not declared in this scope; did you mean ‘var_2’?
+   83 |     var_26 = ((short) std::max((((unsigned long long int) ((((bool) -1)) ? (((long long int) ((int) var_12))) : (7137448686142380369LL)))), (((unsigned long long int) var_24))));
+      |     ^~~~~~
+      |     var_2
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:83:168: error: ‘var_24’ was not declared in this scope; did you mean ‘var_2’?
+   83 |     var_26 = ((short) std::max((((unsigned long long int) ((((bool) -1)) ? (((long long int) ((int) var_12))) : (7137448686142380369LL)))), (((unsigned long long int) var_24))));
+      |                                                                                                                                                                        ^~~~~~
+      |                                                                                                                                                                        var_2
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp: In function ‘void test(int, bool, long long int, short unsigned int, long long unsigned int, long long int, short int, bool, int, long long int, bool, unsigned char, int, unsigned char (*)[19][19], long long int (*)[19][19][19][19], short int (*)[19][19][19][19], long long unsigned int*, unsigned int*, unsigned char (*)[16][16][16])’:
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:33:21: error: ‘var_17’ was not declared in this scope; did you mean ‘var_1’?
+   33 |                     var_17 *= ((bool) std::min((32766), ((~(std::min((((int) arr_9 [16LL] [i_0] [i_0] [4ULL] [i_2])), (32766)))))));
+      |                     ^~~~~~
+      |                     var_1
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:43:79: error: ‘var_17’ was not declared in this scope; did you mean ‘var_1’?
+   43 |     for (unsigned long long int i_5 = 0ULL; i_5 < ((((unsigned long long int) var_17)) + (15ULL)); i_5 += ((((unsigned long long int) (~(((long long int) var_0))))) - (18446744072042492864ULL)))
+      |                                                                               ^~~~~~
+      |                                                                               var_1
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:53:21: error: ‘var_18’ was not declared in this scope; did you mean ‘var_1’?
+   53 |                     var_18 = ((unsigned char) std::max((var_18), (((unsigned char) (bool)1))));
+      |                     ^~~~~~
+      |                     var_1
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:69:37: error: ‘var_21’ was not declared in this scope; did you mean ‘var_1’?
+   69 |                                     var_21 &= std::min((((unsigned long long int) ((var_11) <= (((long long int) ((int) arr_19 [i_8] [i_6] [i_7] [(unsigned char)12])))))), ((+((~(4ULL))))));
+      |                                     ^~~~~~
+      |                                     var_1
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:75:25: error: ‘var_24’ was not declared in this scope; did you mean ‘var_2’?
+   75 |                         var_24 = ((bool) std::min((var_24), (((bool) ((((bool) ((unsigned char) 9223372036854775799LL))) ? (((((bool) std::max(((short)-32761), (((short) arr_2 [i_5] [i_6] [i_5]))))) ? (arr_10 [i_6]) : (1338825197561442213ULL))) : (((unsigned long long int) ((int) (!((!(((bool) arr_10 [i_6])))))))))))));
+      |                         ^~~~~~
+      |                         var_2
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:76:25: error: ‘var_25’ was not declared in this scope; did you mean ‘var_2’?
+   76 |                         var_25 = ((unsigned long long int) (bool)0);
+      |                         ^~~~~~
+      |                         var_2
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:83:5: error: ‘var_26’ was not declared in this scope; did you mean ‘var_2’?
+   83 |     var_26 = ((short) std::max((((unsigned long long int) ((((bool) -1)) ? (((long long int) ((int) var_12))) : (7137448686142380369LL)))), (((unsigned long long int) var_24))));
+      |     ^~~~~~
+      |     var_2
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:83:168: error: ‘var_24’ was not declared in this scope; did you mean ‘var_2’?
+   83 |     var_26 = ((short) std::max((((unsigned long long int) ((((bool) -1)) ? (((long long int) ((int) var_12))) : (7137448686142380369LL)))), (((unsigned long long int) var_24))));
+      |                                                                                                                                                                        ^~~~~~
+      |                                                                                                                                                                        var_2
+[31m     Compiler Error!  Skip...[0m
+rm: cannot remove '/home/zy/OptChecker/code/lu2cp/reduce/2/clang_result.txt': No such file or directory
+Insertion for dst code....
+((bool) (short)-1393)
+((bool) std::max((((((bool) arr_10 [i_6])) ? (18446744073709551615ULL) : (14096741067519610908ULL))), (std::max((((unsigned long long int) (short)27375)), (var_4)))))
+5 warnings and 10 errors generated.
+Error while processing /home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp.
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:20:25: warning: myInsert0=((bool) (short)-1393);
+ [misc-lu2cp]
+   20 |                         for (short i_4 = (short)0; i_4 < (short)19; i_4 += (short)2) 
+      |                         ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:24:33: warning: myMark0=((bool) (short)-1393);myMark0=myMark0-myInsert0;
+ [misc-lu2cp]
+   24 |                                 if (((bool) (short)-1393))
+      |                                 ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:33:21: error: use of undeclared identifier 'var_17' [clang-diagnostic-error]
+   33 |                     var_17 *= ((bool) std::min((32766), ((~(std::min((((int) arr_9 [16LL] [i_0] [i_0] [4ULL] [i_2])), (32766)))))));
+      |                     ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:43:79: error: use of undeclared identifier 'var_17' [clang-diagnostic-error]
+   43 |     for (unsigned long long int i_5 = 0ULL; i_5 < ((((unsigned long long int) var_17)) + (15ULL)); i_5 += ((((unsigned long long int) (~(((long long int) var_0))))) - (18446744072042492864ULL))) 
+      |                                                                               ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:50:13: warning: myInsert1=((bool) std::max((((((bool) arr_10 [i_6])) ? (18446744073709551615ULL) : (14096741067519610908ULL))), (std::max((((unsigned long long int) (short)27375)), (var_4)))));
+ [misc-lu2cp]
+   50 |             for (unsigned char i_7 = (unsigned char)0; i_7 < (unsigned char)16; i_7 += ((((int) ((unsigned char) (bool)0))) + (1))) 
+      |             ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:53:21: error: use of undeclared identifier 'var_18' [clang-diagnostic-error]
+   53 |                     var_18 = ((unsigned char) std::max((var_18), (((unsigned char) (bool)1))));
+      |                     ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:53:57: error: use of undeclared identifier 'var_18' [clang-diagnostic-error]
+   53 |                     var_18 = ((unsigned char) std::max((var_18), (((unsigned char) (bool)1))));
+      |                                                         ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:54:21: warning: myMark1=((bool) std::max((((((bool) arr_10 [i_6])) ? (18446744073709551615ULL) : (14096741067519610908ULL))), (std::max((((unsigned long long int) (short)27375)), (var_4)))));myMark1=myMark1-myInsert1;
+ [misc-lu2cp]
+   54 |                     if (((bool) std::max((((((bool) arr_10 [i_6])) ? (18446744073709551615ULL) : (14096741067519610908ULL))), (std::max((((unsigned long long int) (short)27375)), (var_4))))))
+      |                     ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:69:37: error: use of undeclared identifier 'var_21' [clang-diagnostic-error]
+   69 |                                     var_21 &= std::min((((unsigned long long int) ((var_11) <= (((long long int) ((int) arr_19 [i_8] [i_6] [i_7] [(unsigned char)12])))))), ((+((~(4ULL))))));
+      |                                     ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:75:25: error: use of undeclared identifier 'var_24' [clang-diagnostic-error]
+   75 |                         var_24 = ((bool) std::min((var_24), (((bool) ((((bool) ((unsigned char) 9223372036854775799LL))) ? (((((bool) std::max(((short)-32761), (((short) arr_2 [i_5] [i_6] [i_5]))))) ? (arr_10 [i_6]) : (1338825197561442213ULL))) : (((unsigned long long int) ((int) (!((!(((bool) arr_10 [i_6])))))))))))));
+      |                         ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:75:52: error: use of undeclared identifier 'var_24' [clang-diagnostic-error]
+   75 |                         var_24 = ((bool) std::min((var_24), (((bool) ((((bool) ((unsigned char) 9223372036854775799LL))) ? (((((bool) std::max(((short)-32761), (((short) arr_2 [i_5] [i_6] [i_5]))))) ? (arr_10 [i_6]) : (1338825197561442213ULL))) : (((unsigned long long int) ((int) (!((!(((bool) arr_10 [i_6])))))))))))));
+      |                                                    ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:76:25: error: use of undeclared identifier 'var_25'; did you mean 'var_2'? [clang-diagnostic-error]
+   76 |                         var_25 = ((unsigned long long int) (bool)0);
+      |                         ^~~~~~
+      |                         var_2
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:3:48: note: 'var_2' declared here
+    3 | void test(int var_0, bool var_1, long long int var_2, unsigned short var_3, unsigned long long int var_4, long long int var_6, short var_7, bool var_9, int var_10, long long int var_11, bool var_12, unsigned char var_13, int zero, unsigned char arr_2 [19] [19] [19] , long long int arr_6 [19] [19] [19] [19] [19] , short arr_9 [19] [19] [19] [19] [19] , unsigned long long int arr_10 [19] , unsigned int arr_13 [16] , unsigned char arr_19 [16] [16] [16] [16] ) {
+      |                                                ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:83:5: error: use of undeclared identifier 'var_26' [clang-diagnostic-error]
+   83 |     var_26 = ((short) std::max((((unsigned long long int) ((((bool) -1)) ? (((long long int) ((int) var_12))) : (7137448686142380369LL)))), (((unsigned long long int) var_24))));
+      |     ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:83:168: error: use of undeclared identifier 'var_24' [clang-diagnostic-error]
+   83 |     var_26 = ((short) std::max((((unsigned long long int) ((((bool) -1)) ? (((long long int) ((int) var_12))) : (7137448686142380369LL)))), (((unsigned long long int) var_24))));
+      |                                                                                                                                                                        ^
+Suppressed 1 warnings (1 with check filters).
+Found compiler errors, but -fix-errors was not specified.
+Fixes have NOT been applied.
+
+Found compiler error(s).
+optimize code with clang...
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:33:21: error: use of undeclared identifier 'var_17'
+   33 |                     var_17 *= ((bool) std::min((32766), ((~(std::min((((int) arr_9 [16LL] [i_0] [i_0] [4ULL] [i_2])), (32766)))))));
+      |                     ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:43:79: error: use of undeclared identifier 'var_17'
+   43 |     for (unsigned long long int i_5 = 0ULL; i_5 < ((((unsigned long long int) var_17)) + (15ULL)); i_5 += ((((unsigned long long int) (~(((long long int) var_0))))) - (18446744072042492864ULL))) 
+      |                                                                               ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:53:21: error: use of undeclared identifier 'var_18'
+   53 |                     var_18 = ((unsigned char) std::max((var_18), (((unsigned char) (bool)1))));
+      |                     ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:53:57: error: use of undeclared identifier 'var_18'
+   53 |                     var_18 = ((unsigned char) std::max((var_18), (((unsigned char) (bool)1))));
+      |                                                         ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:68:121: warning: self-comparison always evaluates to true [-Wtautological-compare]
+   68 |                                     var_9 = ((bool) std::min((var_9), (((bool) ((((unsigned int) ((int) ((arr_13 [i_8]) <= (arr_13 [i_8]))))) + (std::max((arr_13 [i_8]), (((unsigned int) (bool)1)))))))));
+      |                                                                                                                         ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:69:37: error: use of undeclared identifier 'var_21'
+   69 |                                     var_21 &= std::min((((unsigned long long int) ((var_11) <= (((long long int) ((int) arr_19 [i_8] [i_6] [i_7] [(unsigned char)12])))))), ((+((~(4ULL))))));
+      |                                     ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:75:25: error: use of undeclared identifier 'var_24'
+   75 |                         var_24 = ((bool) std::min((var_24), (((bool) ((((bool) ((unsigned char) 9223372036854775799LL))) ? (((((bool) std::max(((short)-32761), (((short) arr_2 [i_5] [i_6] [i_5]))))) ? (arr_10 [i_6]) : (1338825197561442213ULL))) : (((unsigned long long int) ((int) (!((!(((bool) arr_10 [i_6])))))))))))));
+      |                         ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:75:52: error: use of undeclared identifier 'var_24'
+   75 |                         var_24 = ((bool) std::min((var_24), (((bool) ((((bool) ((unsigned char) 9223372036854775799LL))) ? (((((bool) std::max(((short)-32761), (((short) arr_2 [i_5] [i_6] [i_5]))))) ? (arr_10 [i_6]) : (1338825197561442213ULL))) : (((unsigned long long int) ((int) (!((!(((bool) arr_10 [i_6])))))))))))));
+      |                                                    ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:76:25: error: use of undeclared identifier 'var_25'; did you mean 'var_2'?
+   76 |                         var_25 = ((unsigned long long int) (bool)0);
+      |                         ^~~~~~
+      |                         var_2
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:3:48: note: 'var_2' declared here
+    3 | void test(int var_0, bool var_1, long long int var_2, unsigned short var_3, unsigned long long int var_4, long long int var_6, short var_7, bool var_9, int var_10, long long int var_11, bool var_12, unsigned char var_13, int zero, unsigned char arr_2 [19] [19] [19] , long long int arr_6 [19] [19] [19] [19] [19] , short arr_9 [19] [19] [19] [19] [19] , unsigned long long int arr_10 [19] , unsigned int arr_13 [16] , unsigned char arr_19 [16] [16] [16] [16] ) {
+      |                                                ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:83:5: error: use of undeclared identifier 'var_26'
+   83 |     var_26 = ((short) std::max((((unsigned long long int) ((((bool) -1)) ? (((long long int) ((int) var_12))) : (7137448686142380369LL)))), (((unsigned long long int) var_24))));
+      |     ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:83:168: error: use of undeclared identifier 'var_24'
+   83 |     var_26 = ((short) std::max((((unsigned long long int) ((((bool) -1)) ? (((long long int) ((int) var_12))) : (7137448686142380369LL)))), (((unsigned long long int) var_24))));
+      |                                                                                                                                                                        ^
+1 warning and 10 errors generated.
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:33:21: error: use of undeclared identifier 'var_17'
+   33 |                     var_17 *= ((bool) std::min((32766), ((~(std::min((((int) arr_9 [16LL] [i_0] [i_0] [4ULL] [i_2])), (32766)))))));
+      |                     ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:43:79: error: use of undeclared identifier 'var_17'
+   43 |     for (unsigned long long int i_5 = 0ULL; i_5 < ((((unsigned long long int) var_17)) + (15ULL)); i_5 += ((((unsigned long long int) (~(((long long int) var_0))))) - (18446744072042492864ULL))) 
+      |                                                                               ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:53:21: error: use of undeclared identifier 'var_18'
+   53 |                     var_18 = ((unsigned char) std::max((var_18), (((unsigned char) (bool)1))));
+      |                     ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:53:57: error: use of undeclared identifier 'var_18'
+   53 |                     var_18 = ((unsigned char) std::max((var_18), (((unsigned char) (bool)1))));
+      |                                                         ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:68:121: warning: self-comparison always evaluates to true [-Wtautological-compare]
+   68 |                                     var_9 = ((bool) std::min((var_9), (((bool) ((((unsigned int) ((int) ((arr_13 [i_8]) <= (arr_13 [i_8]))))) + (std::max((arr_13 [i_8]), (((unsigned int) (bool)1)))))))));
+      |                                                                                                                         ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:69:37: error: use of undeclared identifier 'var_21'
+   69 |                                     var_21 &= std::min((((unsigned long long int) ((var_11) <= (((long long int) ((int) arr_19 [i_8] [i_6] [i_7] [(unsigned char)12])))))), ((+((~(4ULL))))));
+      |                                     ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:75:25: error: use of undeclared identifier 'var_24'
+   75 |                         var_24 = ((bool) std::min((var_24), (((bool) ((((bool) ((unsigned char) 9223372036854775799LL))) ? (((((bool) std::max(((short)-32761), (((short) arr_2 [i_5] [i_6] [i_5]))))) ? (arr_10 [i_6]) : (1338825197561442213ULL))) : (((unsigned long long int) ((int) (!((!(((bool) arr_10 [i_6])))))))))))));
+      |                         ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:75:52: error: use of undeclared identifier 'var_24'
+   75 |                         var_24 = ((bool) std::min((var_24), (((bool) ((((bool) ((unsigned char) 9223372036854775799LL))) ? (((((bool) std::max(((short)-32761), (((short) arr_2 [i_5] [i_6] [i_5]))))) ? (arr_10 [i_6]) : (1338825197561442213ULL))) : (((unsigned long long int) ((int) (!((!(((bool) arr_10 [i_6])))))))))))));
+      |                                                    ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:76:25: error: use of undeclared identifier 'var_25'; did you mean 'var_2'?
+   76 |                         var_25 = ((unsigned long long int) (bool)0);
+      |                         ^~~~~~
+      |                         var_2
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:3:48: note: 'var_2' declared here
+    3 | void test(int var_0, bool var_1, long long int var_2, unsigned short var_3, unsigned long long int var_4, long long int var_6, short var_7, bool var_9, int var_10, long long int var_11, bool var_12, unsigned char var_13, int zero, unsigned char arr_2 [19] [19] [19] , long long int arr_6 [19] [19] [19] [19] [19] , short arr_9 [19] [19] [19] [19] [19] , unsigned long long int arr_10 [19] , unsigned int arr_13 [16] , unsigned char arr_19 [16] [16] [16] [16] ) {
+      |                                                ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:83:5: error: use of undeclared identifier 'var_26'
+   83 |     var_26 = ((short) std::max((((unsigned long long int) ((((bool) -1)) ? (((long long int) ((int) var_12))) : (7137448686142380369LL)))), (((unsigned long long int) var_24))));
+      |     ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:83:168: error: use of undeclared identifier 'var_24'
+   83 |     var_26 = ((short) std::max((((unsigned long long int) ((((bool) -1)) ? (((long long int) ((int) var_12))) : (7137448686142380369LL)))), (((unsigned long long int) var_24))));
+      |                                                                                                                                                                        ^
+1 warning and 10 errors generated.
+[31m     Compiler Error!  Skip...[0m
+grep: /home/zy/OptChecker/code/lu2cp/reduce/2/gcc_result.txt: No such file or directory
+grep: /home/zy/OptChecker/code/lu2cp/reduce/2/clang_result.txt: No such file or directory
+delta_test() returned 
+delta test failure
+[0 pass_includes :: 0] 
+===< pass_line_markers :: 0 >===
+
+===< pass_blank :: 0 >===
+/home/zy/OptChecker/code/lu2cp/reduce/2
+rm: cannot remove '/home/zy/OptChecker/code/lu2cp/reduce/2/gcc_result.txt': No such file or directory
+rm: cannot remove '/home/zy/OptChecker/code/lu2cp/reduce/2/clang_result.txt': No such file or directory
+========================================================================
+#include <algorithm>
+void test(int var_0, bool var_1, long long int var_2, unsigned short var_3, unsigned long long int var_4, long long int var_6, short var_7, bool var_9, int var_10, long long int var_11, bool var_12, unsigned char var_13, int zero, unsigned char arr_2 [19] [19] [19] , long long int arr_6 [19] [19] [19] [19] [19] , short arr_9 [19] [19] [19] [19] [19] , unsigned long long int arr_10 [19] , unsigned int arr_13 [16] , unsigned char arr_19 [16] [16] [16] [16] ) {
+    #pragma clang loop vectorize(enable)
+    #pragma clang loop interleave(enable)
+    for (int i_0 = ((((int) var_6)) - (348318917)); i_0 < ((((int) (unsigned char)255)) - (236)); i_0 += 4) 
+    {
+        #pragma clang loop vectorize(enable)
+        #pragma clang loop unroll(enable)
+        for (long long int i_1 = ((((long long int) var_10)) - (2120600768LL)); i_1 < 18LL; i_1 += 3LL) 
+        {
+            for (short i_2 = ((((int) ((short) var_9))) - (1)); i_2 < (short)19; i_2 += (short)2) 
+            {
+                {
+                    #pragma clang loop vectorize(enable)
+                    for (unsigned short i_3 = ((((int) ((unsigned short) var_13))) - (231)); i_3 < (unsigned short)19; i_3 += ((((int) ((unsigned short) var_11))) - (11185))) 
+                    {
+                        for (short i_4 = (short)0; i_4 < (short)19; i_4 += (short)2) 
+                        {
+                            {
+                                var_3 &= ((unsigned short) 4865933526215308472ULL);
+                                if (((bool) (short)-1393))
+                                {
+                                    var_4 = ((unsigned long long int) std::min((std::min((arr_6 [i_1 - 1] [i_1] [i_2] [(bool)1] [i_1]), (arr_6 [i_1 - 1] [i_3] [i_3] [12ULL] [i_4]))), (std::max((arr_6 [i_1 + 1] [i_1] [i_2] [i_3] [i_2]), (arr_6 [i_1 - 1] [15ULL] [15ULL] [i_3] [i_4])))));
+                                    var_2 = ((long long int) (bool)1);
+                                }
+                            }
+                        } 
+                    } 
+                    var_17 *= ((bool) std::min((32766), ((~(std::min((((int) arr_9 [16LL] [i_0] [i_0] [4ULL] [i_2])), (32766)))))));
+                }
+            } 
+        } 
+    } 
+    #pragma clang loop vectorize(enable)
+    #pragma clang loop unroll(enable)
+    #pragma clang loop interleave(enable)
+    #pragma clang loop vectorize_predicate(enable)
+    for (unsigned long long int i_5 = 0ULL; i_5 < ((((unsigned long long int) var_17)) + (15ULL)); i_5 += ((((unsigned long long int) (~(((long long int) var_0))))) - (18446744072042492864ULL))) 
+    {
+        #pragma clang loop vectorize(enable)
+        #pragma clang loop interleave(enable)
+        for (bool i_6 = ((((int) ((bool) var_7))) - (1)); i_6 < ((int) ((bool) 451166666U)); i_6 += (bool)1) 
+        {
+            #pragma clang loop interleave(enable)
+            for (unsigned char i_7 = (unsigned char)0; i_7 < (unsigned char)16; i_7 += ((((int) ((unsigned char) (bool)0))) + (1))) 
+            {
+                {
+                    var_18 = ((unsigned char) std::max((var_18), (((unsigned char) (bool)1))));
+                    if (((bool) std::max((((((bool) arr_10 [i_6])) ? (18446744073709551615ULL) : (14096741067519610908ULL))), (std::max((((unsigned long long int) (short)27375)), (var_4))))))
+                    {
+                        #pragma clang loop unroll(enable)
+                        #pragma clang loop interleave(enable)
+                        #pragma clang loop vectorize(enable)
+                        for (signed char i_8 = ((((int) ((signed char) var_9))) - (1)); i_8 < (signed char)16; i_8 += (signed char)4) 
+                        {
+                            #pragma clang loop unroll(enable)
+                            #pragma clang loop vectorize_predicate(enable)
+                            for (unsigned long long int i_9 = 0ULL; i_9 < ((((unsigned long long int) (+(((int) (!(((bool) -6069414501777405238LL)))))))) + (16ULL)); i_9 += 3ULL) 
+                            {
+                                {
+                                    var_12 = ((bool) std::min((var_12), ((bool)1)));
+                                    var_9 = ((bool) std::min((var_9), (((bool) ((((unsigned int) ((int) ((arr_13 [i_8]) <= (arr_13 [i_8]))))) + (std::max((arr_13 [i_8]), (((unsigned int) (bool)1)))))))));
+                                    var_21 &= std::min((((unsigned long long int) ((var_11) <= (((long long int) ((int) arr_19 [i_8] [i_6] [i_7] [(unsigned char)12])))))), ((+((~(4ULL))))));
+                                    var_2 = ((long long int) std::min((var_2), (((long long int) (bool)0))));
+                                }
+                            } 
+                        } 
+                        var_1 = ((bool) std::max((var_1), (((bool) ((((bool) var_0)) ? (std::min((((unsigned long long int) (((bool)0) ? (((unsigned int) ((int) (unsigned char)255))) : (4142025276U)))), (((unsigned long long int) var_7)))) : (17107918876148109402ULL))))));
+                        var_24 = ((bool) std::min((var_24), (((bool) ((((bool) ((unsigned char) 9223372036854775799LL))) ? (((((bool) std::max(((short)-32761), (((short) arr_2 [i_5] [i_6] [i_5]))))) ? (arr_10 [i_6]) : (1338825197561442213ULL))) : (((unsigned long long int) ((int) (!((!(((bool) arr_10 [i_6])))))))))))));
+                        var_25 = ((unsigned long long int) (bool)0);
+                    }
+                }
+            } 
+        } 
+    } 
+    var_26 = ((short) std::max((((unsigned long long int) ((((bool) -1)) ? (((long long int) ((int) var_12))) : (7137448686142380369LL)))), (((unsigned long long int) var_24))));
+}
+========================================================================
+rm: cannot remove '/home/zy/OptChecker/code/lu2cp/reduce/2/gcc_result.txt': No such file or directory
+Insertion for dst code....
+((bool) (short)-1393)
+((bool) std::max((((((bool) arr_10 [i_6])) ? (18446744073709551615ULL) : (14096741067519610908ULL))), (std::max((((unsigned long long int) (short)27375)), (var_4)))))
+5 warnings and 10 errors generated.
+Error while processing /home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp.
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:17:25: warning: myInsert0=((bool) (short)-1393);
+ [misc-lu2cp]
+   17 |                         for (short i_4 = (short)0; i_4 < (short)19; i_4 += (short)2) 
+      |                         ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:21:33: warning: myMark0=((bool) (short)-1393);myMark0=myMark0-myInsert0;
+ [misc-lu2cp]
+   21 |                                 if (((bool) (short)-1393))
+      |                                 ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:29:21: error: use of undeclared identifier 'var_17' [clang-diagnostic-error]
+   29 |                     var_17 *= ((bool) std::min((32766), ((~(std::min((((int) arr_9 [16LL] [i_0] [i_0] [4ULL] [i_2])), (32766)))))));
+      |                     ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:38:79: error: use of undeclared identifier 'var_17' [clang-diagnostic-error]
+   38 |     for (unsigned long long int i_5 = 0ULL; i_5 < ((((unsigned long long int) var_17)) + (15ULL)); i_5 += ((((unsigned long long int) (~(((long long int) var_0))))) - (18446744072042492864ULL))) 
+      |                                                                               ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:45:13: warning: myInsert1=((bool) std::max((((((bool) arr_10 [i_6])) ? (18446744073709551615ULL) : (14096741067519610908ULL))), (std::max((((unsigned long long int) (short)27375)), (var_4)))));
+ [misc-lu2cp]
+   45 |             for (unsigned char i_7 = (unsigned char)0; i_7 < (unsigned char)16; i_7 += ((((int) ((unsigned char) (bool)0))) + (1))) 
+      |             ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:48:21: error: use of undeclared identifier 'var_18' [clang-diagnostic-error]
+   48 |                     var_18 = ((unsigned char) std::max((var_18), (((unsigned char) (bool)1))));
+      |                     ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:48:57: error: use of undeclared identifier 'var_18' [clang-diagnostic-error]
+   48 |                     var_18 = ((unsigned char) std::max((var_18), (((unsigned char) (bool)1))));
+      |                                                         ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:49:21: warning: myMark1=((bool) std::max((((((bool) arr_10 [i_6])) ? (18446744073709551615ULL) : (14096741067519610908ULL))), (std::max((((unsigned long long int) (short)27375)), (var_4)))));myMark1=myMark1-myInsert1;
+ [misc-lu2cp]
+   49 |                     if (((bool) std::max((((((bool) arr_10 [i_6])) ? (18446744073709551615ULL) : (14096741067519610908ULL))), (std::max((((unsigned long long int) (short)27375)), (var_4))))))
+      |                     ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:63:37: error: use of undeclared identifier 'var_21' [clang-diagnostic-error]
+   63 |                                     var_21 &= std::min((((unsigned long long int) ((var_11) <= (((long long int) ((int) arr_19 [i_8] [i_6] [i_7] [(unsigned char)12])))))), ((+((~(4ULL))))));
+      |                                     ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:69:25: error: use of undeclared identifier 'var_24' [clang-diagnostic-error]
+   69 |                         var_24 = ((bool) std::min((var_24), (((bool) ((((bool) ((unsigned char) 9223372036854775799LL))) ? (((((bool) std::max(((short)-32761), (((short) arr_2 [i_5] [i_6] [i_5]))))) ? (arr_10 [i_6]) : (1338825197561442213ULL))) : (((unsigned long long int) ((int) (!((!(((bool) arr_10 [i_6])))))))))))));
+      |                         ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:69:52: error: use of undeclared identifier 'var_24' [clang-diagnostic-error]
+   69 |                         var_24 = ((bool) std::min((var_24), (((bool) ((((bool) ((unsigned char) 9223372036854775799LL))) ? (((((bool) std::max(((short)-32761), (((short) arr_2 [i_5] [i_6] [i_5]))))) ? (arr_10 [i_6]) : (1338825197561442213ULL))) : (((unsigned long long int) ((int) (!((!(((bool) arr_10 [i_6])))))))))))));
+      |                                                    ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:70:25: error: use of undeclared identifier 'var_25'; did you mean 'var_2'? [clang-diagnostic-error]
+   70 |                         var_25 = ((unsigned long long int) (bool)0);
+      |                         ^~~~~~
+      |                         var_2
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:2:48: note: 'var_2' declared here
+    2 | void test(int var_0, bool var_1, long long int var_2, unsigned short var_3, unsigned long long int var_4, long long int var_6, short var_7, bool var_9, int var_10, long long int var_11, bool var_12, unsigned char var_13, int zero, unsigned char arr_2 [19] [19] [19] , long long int arr_6 [19] [19] [19] [19] [19] , short arr_9 [19] [19] [19] [19] [19] , unsigned long long int arr_10 [19] , unsigned int arr_13 [16] , unsigned char arr_19 [16] [16] [16] [16] ) {
+      |                                                ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:76:5: error: use of undeclared identifier 'var_26' [clang-diagnostic-error]
+   76 |     var_26 = ((short) std::max((((unsigned long long int) ((((bool) -1)) ? (((long long int) ((int) var_12))) : (7137448686142380369LL)))), (((unsigned long long int) var_24))));
+      |     ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:76:168: error: use of undeclared identifier 'var_24' [clang-diagnostic-error]
+   76 |     var_26 = ((short) std::max((((unsigned long long int) ((((bool) -1)) ? (((long long int) ((int) var_12))) : (7137448686142380369LL)))), (((unsigned long long int) var_24))));
+      |                                                                                                                                                                        ^
+Suppressed 1 warnings (1 with check filters).
+Found compiler errors, but -fix-errors was not specified.
+Fixes have NOT been applied.
+
+Found compiler error(s).
+optimize code with gcc...
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp: In function ‘void test(int, bool, long long int, short unsigned int, long long unsigned int, long long int, short int, bool, int, long long int, bool, unsigned char, int, unsigned char (*)[19][19], long long int (*)[19][19][19][19], short int (*)[19][19][19][19], long long unsigned int*, unsigned int*, unsigned char (*)[16][16][16])’:
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:29:21: error: ‘var_17’ was not declared in this scope; did you mean ‘var_1’?
+   29 |                     var_17 *= ((bool) std::min((32766), ((~(std::min((((int) arr_9 [16LL] [i_0] [i_0] [4ULL] [i_2])), (32766)))))));
+      |                     ^~~~~~
+      |                     var_1
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:38:79: error: ‘var_17’ was not declared in this scope; did you mean ‘var_1’?
+   38 |     for (unsigned long long int i_5 = 0ULL; i_5 < ((((unsigned long long int) var_17)) + (15ULL)); i_5 += ((((unsigned long long int) (~(((long long int) var_0))))) - (18446744072042492864ULL)))
+      |                                                                               ^~~~~~
+      |                                                                               var_1
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:48:21: error: ‘var_18’ was not declared in this scope; did you mean ‘var_1’?
+   48 |                     var_18 = ((unsigned char) std::max((var_18), (((unsigned char) (bool)1))));
+      |                     ^~~~~~
+      |                     var_1
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:63:37: error: ‘var_21’ was not declared in this scope; did you mean ‘var_1’?
+   63 |                                     var_21 &= std::min((((unsigned long long int) ((var_11) <= (((long long int) ((int) arr_19 [i_8] [i_6] [i_7] [(unsigned char)12])))))), ((+((~(4ULL))))));
+      |                                     ^~~~~~
+      |                                     var_1
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:69:25: error: ‘var_24’ was not declared in this scope; did you mean ‘var_2’?
+   69 |                         var_24 = ((bool) std::min((var_24), (((bool) ((((bool) ((unsigned char) 9223372036854775799LL))) ? (((((bool) std::max(((short)-32761), (((short) arr_2 [i_5] [i_6] [i_5]))))) ? (arr_10 [i_6]) : (1338825197561442213ULL))) : (((unsigned long long int) ((int) (!((!(((bool) arr_10 [i_6])))))))))))));
+      |                         ^~~~~~
+      |                         var_2
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:70:25: error: ‘var_25’ was not declared in this scope; did you mean ‘var_2’?
+   70 |                         var_25 = ((unsigned long long int) (bool)0);
+      |                         ^~~~~~
+      |                         var_2
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:76:5: error: ‘var_26’ was not declared in this scope; did you mean ‘var_2’?
+   76 |     var_26 = ((short) std::max((((unsigned long long int) ((((bool) -1)) ? (((long long int) ((int) var_12))) : (7137448686142380369LL)))), (((unsigned long long int) var_24))));
+      |     ^~~~~~
+      |     var_2
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:76:168: error: ‘var_24’ was not declared in this scope; did you mean ‘var_2’?
+   76 |     var_26 = ((short) std::max((((unsigned long long int) ((((bool) -1)) ? (((long long int) ((int) var_12))) : (7137448686142380369LL)))), (((unsigned long long int) var_24))));
+      |                                                                                                                                                                        ^~~~~~
+      |                                                                                                                                                                        var_2
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp: In function ‘void test(int, bool, long long int, short unsigned int, long long unsigned int, long long int, short int, bool, int, long long int, bool, unsigned char, int, unsigned char (*)[19][19], long long int (*)[19][19][19][19], short int (*)[19][19][19][19], long long unsigned int*, unsigned int*, unsigned char (*)[16][16][16])’:
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:29:21: error: ‘var_17’ was not declared in this scope; did you mean ‘var_1’?
+   29 |                     var_17 *= ((bool) std::min((32766), ((~(std::min((((int) arr_9 [16LL] [i_0] [i_0] [4ULL] [i_2])), (32766)))))));
+      |                     ^~~~~~
+      |                     var_1
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:38:79: error: ‘var_17’ was not declared in this scope; did you mean ‘var_1’?
+   38 |     for (unsigned long long int i_5 = 0ULL; i_5 < ((((unsigned long long int) var_17)) + (15ULL)); i_5 += ((((unsigned long long int) (~(((long long int) var_0))))) - (18446744072042492864ULL)))
+      |                                                                               ^~~~~~
+      |                                                                               var_1
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:48:21: error: ‘var_18’ was not declared in this scope; did you mean ‘var_1’?
+   48 |                     var_18 = ((unsigned char) std::max((var_18), (((unsigned char) (bool)1))));
+      |                     ^~~~~~
+      |                     var_1
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:63:37: error: ‘var_21’ was not declared in this scope; did you mean ‘var_1’?
+   63 |                                     var_21 &= std::min((((unsigned long long int) ((var_11) <= (((long long int) ((int) arr_19 [i_8] [i_6] [i_7] [(unsigned char)12])))))), ((+((~(4ULL))))));
+      |                                     ^~~~~~
+      |                                     var_1
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:69:25: error: ‘var_24’ was not declared in this scope; did you mean ‘var_2’?
+   69 |                         var_24 = ((bool) std::min((var_24), (((bool) ((((bool) ((unsigned char) 9223372036854775799LL))) ? (((((bool) std::max(((short)-32761), (((short) arr_2 [i_5] [i_6] [i_5]))))) ? (arr_10 [i_6]) : (1338825197561442213ULL))) : (((unsigned long long int) ((int) (!((!(((bool) arr_10 [i_6])))))))))))));
+      |                         ^~~~~~
+      |                         var_2
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:70:25: error: ‘var_25’ was not declared in this scope; did you mean ‘var_2’?
+   70 |                         var_25 = ((unsigned long long int) (bool)0);
+      |                         ^~~~~~
+      |                         var_2
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:76:5: error: ‘var_26’ was not declared in this scope; did you mean ‘var_2’?
+   76 |     var_26 = ((short) std::max((((unsigned long long int) ((((bool) -1)) ? (((long long int) ((int) var_12))) : (7137448686142380369LL)))), (((unsigned long long int) var_24))));
+      |     ^~~~~~
+      |     var_2
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:76:168: error: ‘var_24’ was not declared in this scope; did you mean ‘var_2’?
+   76 |     var_26 = ((short) std::max((((unsigned long long int) ((((bool) -1)) ? (((long long int) ((int) var_12))) : (7137448686142380369LL)))), (((unsigned long long int) var_24))));
+      |                                                                                                                                                                        ^~~~~~
+      |                                                                                                                                                                        var_2
+[31m     Compiler Error!  Skip...[0m
+rm: cannot remove '/home/zy/OptChecker/code/lu2cp/reduce/2/clang_result.txt': No such file or directory
+Insertion for dst code....
+((bool) (short)-1393)
+((bool) std::max((((((bool) arr_10 [i_6])) ? (18446744073709551615ULL) : (14096741067519610908ULL))), (std::max((((unsigned long long int) (short)27375)), (var_4)))))
+5 warnings and 10 errors generated.
+Error while processing /home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp.
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:17:25: warning: myInsert0=((bool) (short)-1393);
+ [misc-lu2cp]
+   17 |                         for (short i_4 = (short)0; i_4 < (short)19; i_4 += (short)2) 
+      |                         ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:21:33: warning: myMark0=((bool) (short)-1393);myMark0=myMark0-myInsert0;
+ [misc-lu2cp]
+   21 |                                 if (((bool) (short)-1393))
+      |                                 ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:29:21: error: use of undeclared identifier 'var_17' [clang-diagnostic-error]
+   29 |                     var_17 *= ((bool) std::min((32766), ((~(std::min((((int) arr_9 [16LL] [i_0] [i_0] [4ULL] [i_2])), (32766)))))));
+      |                     ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:38:79: error: use of undeclared identifier 'var_17' [clang-diagnostic-error]
+   38 |     for (unsigned long long int i_5 = 0ULL; i_5 < ((((unsigned long long int) var_17)) + (15ULL)); i_5 += ((((unsigned long long int) (~(((long long int) var_0))))) - (18446744072042492864ULL))) 
+      |                                                                               ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:45:13: warning: myInsert1=((bool) std::max((((((bool) arr_10 [i_6])) ? (18446744073709551615ULL) : (14096741067519610908ULL))), (std::max((((unsigned long long int) (short)27375)), (var_4)))));
+ [misc-lu2cp]
+   45 |             for (unsigned char i_7 = (unsigned char)0; i_7 < (unsigned char)16; i_7 += ((((int) ((unsigned char) (bool)0))) + (1))) 
+      |             ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:48:21: error: use of undeclared identifier 'var_18' [clang-diagnostic-error]
+   48 |                     var_18 = ((unsigned char) std::max((var_18), (((unsigned char) (bool)1))));
+      |                     ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:48:57: error: use of undeclared identifier 'var_18' [clang-diagnostic-error]
+   48 |                     var_18 = ((unsigned char) std::max((var_18), (((unsigned char) (bool)1))));
+      |                                                         ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:49:21: warning: myMark1=((bool) std::max((((((bool) arr_10 [i_6])) ? (18446744073709551615ULL) : (14096741067519610908ULL))), (std::max((((unsigned long long int) (short)27375)), (var_4)))));myMark1=myMark1-myInsert1;
+ [misc-lu2cp]
+   49 |                     if (((bool) std::max((((((bool) arr_10 [i_6])) ? (18446744073709551615ULL) : (14096741067519610908ULL))), (std::max((((unsigned long long int) (short)27375)), (var_4))))))
+      |                     ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:63:37: error: use of undeclared identifier 'var_21' [clang-diagnostic-error]
+   63 |                                     var_21 &= std::min((((unsigned long long int) ((var_11) <= (((long long int) ((int) arr_19 [i_8] [i_6] [i_7] [(unsigned char)12])))))), ((+((~(4ULL))))));
+      |                                     ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:69:25: error: use of undeclared identifier 'var_24' [clang-diagnostic-error]
+   69 |                         var_24 = ((bool) std::min((var_24), (((bool) ((((bool) ((unsigned char) 9223372036854775799LL))) ? (((((bool) std::max(((short)-32761), (((short) arr_2 [i_5] [i_6] [i_5]))))) ? (arr_10 [i_6]) : (1338825197561442213ULL))) : (((unsigned long long int) ((int) (!((!(((bool) arr_10 [i_6])))))))))))));
+      |                         ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:69:52: error: use of undeclared identifier 'var_24' [clang-diagnostic-error]
+   69 |                         var_24 = ((bool) std::min((var_24), (((bool) ((((bool) ((unsigned char) 9223372036854775799LL))) ? (((((bool) std::max(((short)-32761), (((short) arr_2 [i_5] [i_6] [i_5]))))) ? (arr_10 [i_6]) : (1338825197561442213ULL))) : (((unsigned long long int) ((int) (!((!(((bool) arr_10 [i_6])))))))))))));
+      |                                                    ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:70:25: error: use of undeclared identifier 'var_25'; did you mean 'var_2'? [clang-diagnostic-error]
+   70 |                         var_25 = ((unsigned long long int) (bool)0);
+      |                         ^~~~~~
+      |                         var_2
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:2:48: note: 'var_2' declared here
+    2 | void test(int var_0, bool var_1, long long int var_2, unsigned short var_3, unsigned long long int var_4, long long int var_6, short var_7, bool var_9, int var_10, long long int var_11, bool var_12, unsigned char var_13, int zero, unsigned char arr_2 [19] [19] [19] , long long int arr_6 [19] [19] [19] [19] [19] , short arr_9 [19] [19] [19] [19] [19] , unsigned long long int arr_10 [19] , unsigned int arr_13 [16] , unsigned char arr_19 [16] [16] [16] [16] ) {
+      |                                                ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:76:5: error: use of undeclared identifier 'var_26' [clang-diagnostic-error]
+   76 |     var_26 = ((short) std::max((((unsigned long long int) ((((bool) -1)) ? (((long long int) ((int) var_12))) : (7137448686142380369LL)))), (((unsigned long long int) var_24))));
+      |     ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:76:168: error: use of undeclared identifier 'var_24' [clang-diagnostic-error]
+   76 |     var_26 = ((short) std::max((((unsigned long long int) ((((bool) -1)) ? (((long long int) ((int) var_12))) : (7137448686142380369LL)))), (((unsigned long long int) var_24))));
+      |                                                                                                                                                                        ^
+Suppressed 1 warnings (1 with check filters).
+Found compiler errors, but -fix-errors was not specified.
+Fixes have NOT been applied.
+
+Found compiler error(s).
+optimize code with clang...
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:29:21: error: use of undeclared identifier 'var_17'
+   29 |                     var_17 *= ((bool) std::min((32766), ((~(std::min((((int) arr_9 [16LL] [i_0] [i_0] [4ULL] [i_2])), (32766)))))));
+      |                     ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:38:79: error: use of undeclared identifier 'var_17'
+   38 |     for (unsigned long long int i_5 = 0ULL; i_5 < ((((unsigned long long int) var_17)) + (15ULL)); i_5 += ((((unsigned long long int) (~(((long long int) var_0))))) - (18446744072042492864ULL))) 
+      |                                                                               ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:48:21: error: use of undeclared identifier 'var_18'
+   48 |                     var_18 = ((unsigned char) std::max((var_18), (((unsigned char) (bool)1))));
+      |                     ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:48:57: error: use of undeclared identifier 'var_18'
+   48 |                     var_18 = ((unsigned char) std::max((var_18), (((unsigned char) (bool)1))));
+      |                                                         ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:62:121: warning: self-comparison always evaluates to true [-Wtautological-compare]
+   62 |                                     var_9 = ((bool) std::min((var_9), (((bool) ((((unsigned int) ((int) ((arr_13 [i_8]) <= (arr_13 [i_8]))))) + (std::max((arr_13 [i_8]), (((unsigned int) (bool)1)))))))));
+      |                                                                                                                         ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:63:37: error: use of undeclared identifier 'var_21'
+   63 |                                     var_21 &= std::min((((unsigned long long int) ((var_11) <= (((long long int) ((int) arr_19 [i_8] [i_6] [i_7] [(unsigned char)12])))))), ((+((~(4ULL))))));
+      |                                     ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:69:25: error: use of undeclared identifier 'var_24'
+   69 |                         var_24 = ((bool) std::min((var_24), (((bool) ((((bool) ((unsigned char) 9223372036854775799LL))) ? (((((bool) std::max(((short)-32761), (((short) arr_2 [i_5] [i_6] [i_5]))))) ? (arr_10 [i_6]) : (1338825197561442213ULL))) : (((unsigned long long int) ((int) (!((!(((bool) arr_10 [i_6])))))))))))));
+      |                         ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:69:52: error: use of undeclared identifier 'var_24'
+   69 |                         var_24 = ((bool) std::min((var_24), (((bool) ((((bool) ((unsigned char) 9223372036854775799LL))) ? (((((bool) std::max(((short)-32761), (((short) arr_2 [i_5] [i_6] [i_5]))))) ? (arr_10 [i_6]) : (1338825197561442213ULL))) : (((unsigned long long int) ((int) (!((!(((bool) arr_10 [i_6])))))))))))));
+      |                                                    ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:70:25: error: use of undeclared identifier 'var_25'; did you mean 'var_2'?
+   70 |                         var_25 = ((unsigned long long int) (bool)0);
+      |                         ^~~~~~
+      |                         var_2
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:2:48: note: 'var_2' declared here
+    2 | void test(int var_0, bool var_1, long long int var_2, unsigned short var_3, unsigned long long int var_4, long long int var_6, short var_7, bool var_9, int var_10, long long int var_11, bool var_12, unsigned char var_13, int zero, unsigned char arr_2 [19] [19] [19] , long long int arr_6 [19] [19] [19] [19] [19] , short arr_9 [19] [19] [19] [19] [19] , unsigned long long int arr_10 [19] , unsigned int arr_13 [16] , unsigned char arr_19 [16] [16] [16] [16] ) {
+      |                                                ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:76:5: error: use of undeclared identifier 'var_26'
+   76 |     var_26 = ((short) std::max((((unsigned long long int) ((((bool) -1)) ? (((long long int) ((int) var_12))) : (7137448686142380369LL)))), (((unsigned long long int) var_24))));
+      |     ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/dst/test.cpp:76:168: error: use of undeclared identifier 'var_24'
+   76 |     var_26 = ((short) std::max((((unsigned long long int) ((((bool) -1)) ? (((long long int) ((int) var_12))) : (7137448686142380369LL)))), (((unsigned long long int) var_24))));
+      |                                                                                                                                                                        ^
+1 warning and 10 errors generated.
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:29:21: error: use of undeclared identifier 'var_17'
+   29 |                     var_17 *= ((bool) std::min((32766), ((~(std::min((((int) arr_9 [16LL] [i_0] [i_0] [4ULL] [i_2])), (32766)))))));
+      |                     ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:38:79: error: use of undeclared identifier 'var_17'
+   38 |     for (unsigned long long int i_5 = 0ULL; i_5 < ((((unsigned long long int) var_17)) + (15ULL)); i_5 += ((((unsigned long long int) (~(((long long int) var_0))))) - (18446744072042492864ULL))) 
+      |                                                                               ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:48:21: error: use of undeclared identifier 'var_18'
+   48 |                     var_18 = ((unsigned char) std::max((var_18), (((unsigned char) (bool)1))));
+      |                     ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:48:57: error: use of undeclared identifier 'var_18'
+   48 |                     var_18 = ((unsigned char) std::max((var_18), (((unsigned char) (bool)1))));
+      |                                                         ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:62:121: warning: self-comparison always evaluates to true [-Wtautological-compare]
+   62 |                                     var_9 = ((bool) std::min((var_9), (((bool) ((((unsigned int) ((int) ((arr_13 [i_8]) <= (arr_13 [i_8]))))) + (std::max((arr_13 [i_8]), (((unsigned int) (bool)1)))))))));
+      |                                                                                                                         ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:63:37: error: use of undeclared identifier 'var_21'
+   63 |                                     var_21 &= std::min((((unsigned long long int) ((var_11) <= (((long long int) ((int) arr_19 [i_8] [i_6] [i_7] [(unsigned char)12])))))), ((+((~(4ULL))))));
+      |                                     ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:69:25: error: use of undeclared identifier 'var_24'
+   69 |                         var_24 = ((bool) std::min((var_24), (((bool) ((((bool) ((unsigned char) 9223372036854775799LL))) ? (((((bool) std::max(((short)-32761), (((short) arr_2 [i_5] [i_6] [i_5]))))) ? (arr_10 [i_6]) : (1338825197561442213ULL))) : (((unsigned long long int) ((int) (!((!(((bool) arr_10 [i_6])))))))))))));
+      |                         ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:69:52: error: use of undeclared identifier 'var_24'
+   69 |                         var_24 = ((bool) std::min((var_24), (((bool) ((((bool) ((unsigned char) 9223372036854775799LL))) ? (((((bool) std::max(((short)-32761), (((short) arr_2 [i_5] [i_6] [i_5]))))) ? (arr_10 [i_6]) : (1338825197561442213ULL))) : (((unsigned long long int) ((int) (!((!(((bool) arr_10 [i_6])))))))))))));
+      |                                                    ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:70:25: error: use of undeclared identifier 'var_25'; did you mean 'var_2'?
+   70 |                         var_25 = ((unsigned long long int) (bool)0);
+      |                         ^~~~~~
+      |                         var_2
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:2:48: note: 'var_2' declared here
+    2 | void test(int var_0, bool var_1, long long int var_2, unsigned short var_3, unsigned long long int var_4, long long int var_6, short var_7, bool var_9, int var_10, long long int var_11, bool var_12, unsigned char var_13, int zero, unsigned char arr_2 [19] [19] [19] , long long int arr_6 [19] [19] [19] [19] [19] , short arr_9 [19] [19] [19] [19] [19] , unsigned long long int arr_10 [19] , unsigned int arr_13 [16] , unsigned char arr_19 [16] [16] [16] [16] ) {
+      |                                                ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:76:5: error: use of undeclared identifier 'var_26'
+   76 |     var_26 = ((short) std::max((((unsigned long long int) ((((bool) -1)) ? (((long long int) ((int) var_12))) : (7137448686142380369LL)))), (((unsigned long long int) var_24))));
+      |     ^
+/home/zy/OptChecker/code/lu2cp/reduce/2/src/test.cpp:76:168: error: use of undeclared identifier 'var_24'
+   76 |     var_26 = ((short) std::max((((unsigned long long int) ((((bool) -1)) ? (((long long int) ((int) var_12))) : (7137448686142380369LL)))), (((unsigned long long int) var_24))));
+      |                                                                                                                                                                        ^
+1 warning and 10 errors generated.
+[31m     Compiler Error!  Skip...[0m
+grep: /home/zy/OptChecker/code/lu2cp/reduce/2/gcc_result.txt: No such file or directory
+grep: /home/zy/OptChecker/code/lu2cp/reduce/2/clang_result.txt: No such file or directory
+delta_test() returned 
+delta test failure
+[0 pass_blank :: 0] 
+===< pass_clang_binsrch :: replace-function-def-with-decl >===
+initial granularity = 1
+TRANSFORM: index = 1, chunk = 1, instances = 1
+"/usr/libexec/clang_delta" --transformation=replace-function-def-with-decl --counter=1 --to-counter=1 /tmp/creduce-grLGlw/test.cpp
+ADVANCE: index = 2, chunk = 1
+/home/zy/OptChecker/code/lu2cp/reduce/2
+rm: cannot remove '/home/zy/OptChecker/code/lu2cp/reduce/2/gcc_result.txt': No such file or directory
+rm: cannot remove '/home/zy/OptChecker/code/lu2cp/reduce/2/clang_result.txt': No such file or directory
+========================================================================
+#include <algorithm>
+void test(int var_0, bool var_1, long long int var_2, unsigned short var_3, unsigned long long int var_4, long long int var_6, short var_7, bool var_9, int var_10, long long int var_11, bool var_12, unsigned char var_13, int zero, unsigned char arr_2 [19] [19] [19] , long long int arr_6 [19] [19] [19] [19] [19] , short arr_9 [19] [19] [19] [19] [19] , unsigned long long int arr_10 [19] , unsigned int arr_13 [16] , unsigned char arr_19 [16] [16] [16] [16] ) ;
+========================================================================
+rm: cannot remove '/home/zy/OptChecker/code/lu2cp/reduce/2/gcc_result.txt': No such file or directory
+Insertion for dst code....
+optimize code with gcc...
+check notOptimized...
+[+] Recovering program CFG...
+[+] Recovering program CFG...
+get result...
+Traceback (most recent call last):
+  File "/home/zy/OptChecker/code/lu2cp/getResult.py", line 28, in <module>
+    file = open(sys.argv[1]+"/dst/Marks.txt", "r")
+FileNotFoundError: [Errno 2] No such file or directory: '/home/zy/OptChecker/code/lu2cp/reduce/2/dst/Marks.txt'
+rm: cannot remove '/home/zy/OptChecker/code/lu2cp/reduce/2/clang_result.txt': No such file or directory
+Insertion for dst code....
+optimize code with clang...
+check notOptimized...
+Traceback (most recent call last):
+  File "/home/zy/OptChecker/code/lu2cp/dwarf_decode_address.py", line 145, in <module>
+    barf = BARF(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/barf.py", line 90, in __init__
+    self.open(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/barf.py", line 211, in open
+    self.binary = BinaryFile(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/core/binary.py", line 160, in __init__
+    self._open(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/core/binary.py", line 229, in _open
+    self._open_elf(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/core/binary.py", line 306, in _open_elf
+    self._section_data_start = min(data_addrs_start)
+ValueError: min() arg is an empty sequence
+Traceback (most recent call last):
+  File "/home/zy/OptChecker/code/lu2cp/dwarf_decode_address.py", line 145, in <module>
+    barf = BARF(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/barf.py", line 90, in __init__
+    self.open(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/barf.py", line 211, in open
+    self.binary = BinaryFile(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/core/binary.py", line 160, in __init__
+    self._open(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/core/binary.py", line 229, in _open
+    self._open_elf(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/core/binary.py", line 306, in _open_elf
+    self._section_data_start = min(data_addrs_start)
+ValueError: min() arg is an empty sequence
+get result...
+Traceback (most recent call last):
+  File "/home/zy/OptChecker/code/lu2cp/getResult.py", line 28, in <module>
+    file = open(sys.argv[1]+"/dst/Marks.txt", "r")
+FileNotFoundError: [Errno 2] No such file or directory: '/home/zy/OptChecker/code/lu2cp/reduce/2/dst/Marks.txt'
+grep: /home/zy/OptChecker/code/lu2cp/reduce/2/gcc_result.txt: No such file or directory
+grep: /home/zy/OptChecker/code/lu2cp/reduce/2/clang_result.txt: No such file or directory
+delta_test() returned 
+delta test failure
+[0 pass_clang_binsrch :: replace-function-def-with-decl] TRANSFORM: index = 2, chunk = 1, instances = 1
+initial granularity = 0
+TRANSFORM: index = 1, chunk = 0, instances = 0
+
+===< pass_clang_binsrch :: remove-unused-function >===
+initial granularity = 1
+TRANSFORM: index = 1, chunk = 1, instances = 1
+"/usr/libexec/clang_delta" --transformation=remove-unused-function --counter=1 --to-counter=1 /tmp/creduce-e_i5uv/test.cpp
+ADVANCE: index = 2, chunk = 1
+/home/zy/OptChecker/code/lu2cp/reduce/2
+rm: cannot remove '/home/zy/OptChecker/code/lu2cp/reduce/2/gcc_result.txt': No such file or directory
+rm: cannot remove '/home/zy/OptChecker/code/lu2cp/reduce/2/clang_result.txt': No such file or directory
+========================================================================
+#include <algorithm>
+
+========================================================================
+rm: cannot remove '/home/zy/OptChecker/code/lu2cp/reduce/2/gcc_result.txt': No such file or directory
+Insertion for dst code....
+optimize code with gcc...
+check notOptimized...
+[+] Recovering program CFG...
+[+] Recovering program CFG...
+get result...
+Traceback (most recent call last):
+  File "/home/zy/OptChecker/code/lu2cp/getResult.py", line 28, in <module>
+    file = open(sys.argv[1]+"/dst/Marks.txt", "r")
+FileNotFoundError: [Errno 2] No such file or directory: '/home/zy/OptChecker/code/lu2cp/reduce/2/dst/Marks.txt'
+rm: cannot remove '/home/zy/OptChecker/code/lu2cp/reduce/2/clang_result.txt': No such file or directory
+Insertion for dst code....
+optimize code with clang...
+check notOptimized...
+Traceback (most recent call last):
+  File "/home/zy/OptChecker/code/lu2cp/dwarf_decode_address.py", line 145, in <module>
+    barf = BARF(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/barf.py", line 90, in __init__
+    self.open(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/barf.py", line 211, in open
+    self.binary = BinaryFile(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/core/binary.py", line 160, in __init__
+    self._open(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/core/binary.py", line 229, in _open
+    self._open_elf(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/core/binary.py", line 306, in _open_elf
+    self._section_data_start = min(data_addrs_start)
+ValueError: min() arg is an empty sequence
+Traceback (most recent call last):
+  File "/home/zy/OptChecker/code/lu2cp/dwarf_decode_address.py", line 145, in <module>
+    barf = BARF(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/barf.py", line 90, in __init__
+    self.open(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/barf.py", line 211, in open
+    self.binary = BinaryFile(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/core/binary.py", line 160, in __init__
+    self._open(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/core/binary.py", line 229, in _open
+    self._open_elf(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/core/binary.py", line 306, in _open_elf
+    self._section_data_start = min(data_addrs_start)
+ValueError: min() arg is an empty sequence
+get result...
+Traceback (most recent call last):
+  File "/home/zy/OptChecker/code/lu2cp/getResult.py", line 28, in <module>
+    file = open(sys.argv[1]+"/dst/Marks.txt", "r")
+FileNotFoundError: [Errno 2] No such file or directory: '/home/zy/OptChecker/code/lu2cp/reduce/2/dst/Marks.txt'
+grep: /home/zy/OptChecker/code/lu2cp/reduce/2/gcc_result.txt: No such file or directory
+grep: /home/zy/OptChecker/code/lu2cp/reduce/2/clang_result.txt: No such file or directory
+delta_test() returned 
+delta test failure
+[0 pass_clang_binsrch :: remove-unused-function] TRANSFORM: index = 2, chunk = 1, instances = 1
+initial granularity = 0
+TRANSFORM: index = 1, chunk = 0, instances = 0
+
+===< pass_lines :: 0 >===
+***TRANSFORM START***
+"/usr/libexec/topformflat" 0 < /tmp/creduce-xrEqQ0/init.h > /tmp/AaITKEd9PE***ADVANCE*** from 6 to 0 with chunk 6
+/home/zy/OptChecker/code/lu2cp/reduce/2
+rm: cannot remove '/home/zy/OptChecker/code/lu2cp/reduce/2/gcc_result.txt': No such file or directory
+rm: cannot remove '/home/zy/OptChecker/code/lu2cp/reduce/2/clang_result.txt': No such file or directory
+========================================================================
+#include <algorithm>
+
+========================================================================
+rm: cannot remove '/home/zy/OptChecker/code/lu2cp/reduce/2/gcc_result.txt': No such file or directory
+Insertion for dst code....
+optimize code with gcc...
+check notOptimized...
+[+] Recovering program CFG...
+[+] Recovering program CFG...
+get result...
+Traceback (most recent call last):
+  File "/home/zy/OptChecker/code/lu2cp/getResult.py", line 28, in <module>
+    file = open(sys.argv[1]+"/dst/Marks.txt", "r")
+FileNotFoundError: [Errno 2] No such file or directory: '/home/zy/OptChecker/code/lu2cp/reduce/2/dst/Marks.txt'
+rm: cannot remove '/home/zy/OptChecker/code/lu2cp/reduce/2/clang_result.txt': No such file or directory
+Insertion for dst code....
+optimize code with clang...
+check notOptimized...
+Traceback (most recent call last):
+  File "/home/zy/OptChecker/code/lu2cp/dwarf_decode_address.py", line 145, in <module>
+    barf = BARF(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/barf.py", line 90, in __init__
+    self.open(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/barf.py", line 211, in open
+    self.binary = BinaryFile(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/core/binary.py", line 160, in __init__
+    self._open(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/core/binary.py", line 229, in _open
+    self._open_elf(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/core/binary.py", line 306, in _open_elf
+    self._section_data_start = min(data_addrs_start)
+ValueError: min() arg is an empty sequence
+Traceback (most recent call last):
+  File "/home/zy/OptChecker/code/lu2cp/dwarf_decode_address.py", line 145, in <module>
+    barf = BARF(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/barf.py", line 90, in __init__
+    self.open(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/barf.py", line 211, in open
+    self.binary = BinaryFile(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/core/binary.py", line 160, in __init__
+    self._open(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/core/binary.py", line 229, in _open
+    self._open_elf(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/core/binary.py", line 306, in _open_elf
+    self._section_data_start = min(data_addrs_start)
+ValueError: min() arg is an empty sequence
+get result...
+Traceback (most recent call last):
+  File "/home/zy/OptChecker/code/lu2cp/getResult.py", line 28, in <module>
+    file = open(sys.argv[1]+"/dst/Marks.txt", "r")
+FileNotFoundError: [Errno 2] No such file or directory: '/home/zy/OptChecker/code/lu2cp/reduce/2/dst/Marks.txt'
+grep: /home/zy/OptChecker/code/lu2cp/reduce/2/gcc_result.txt: No such file or directory
+grep: /home/zy/OptChecker/code/lu2cp/reduce/2/clang_result.txt: No such file or directory
+delta_test() returned 
+delta test failure
+[0 pass_lines :: 0] ***TRANSFORM REGULAR chunk 6 at 0***
+went from 6 lines to 0 with chunk 6
+***ADVANCE*** from 0 to -6 with chunk 6
+/home/zy/OptChecker/code/lu2cp/reduce/2
+rm: cannot remove '/home/zy/OptChecker/code/lu2cp/reduce/2/gcc_result.txt': No such file or directory
+rm: cannot remove '/home/zy/OptChecker/code/lu2cp/reduce/2/clang_result.txt': No such file or directory
+========================================================================
+#include <algorithm>
+
+========================================================================
+rm: cannot remove '/home/zy/OptChecker/code/lu2cp/reduce/2/gcc_result.txt': No such file or directory
+Insertion for dst code....
+optimize code with gcc...
+check notOptimized...
+[+] Recovering program CFG...
+[+] Recovering program CFG...
+get result...
+Traceback (most recent call last):
+  File "/home/zy/OptChecker/code/lu2cp/getResult.py", line 28, in <module>
+    file = open(sys.argv[1]+"/dst/Marks.txt", "r")
+FileNotFoundError: [Errno 2] No such file or directory: '/home/zy/OptChecker/code/lu2cp/reduce/2/dst/Marks.txt'
+rm: cannot remove '/home/zy/OptChecker/code/lu2cp/reduce/2/clang_result.txt': No such file or directory
+Insertion for dst code....
+optimize code with clang...
+check notOptimized...
+Traceback (most recent call last):
+  File "/home/zy/OptChecker/code/lu2cp/dwarf_decode_address.py", line 145, in <module>
+    barf = BARF(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/barf.py", line 90, in __init__
+    self.open(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/barf.py", line 211, in open
+    self.binary = BinaryFile(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/core/binary.py", line 160, in __init__
+    self._open(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/core/binary.py", line 229, in _open
+    self._open_elf(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/core/binary.py", line 306, in _open_elf
+    self._section_data_start = min(data_addrs_start)
+ValueError: min() arg is an empty sequence
+Traceback (most recent call last):
+  File "/home/zy/OptChecker/code/lu2cp/dwarf_decode_address.py", line 145, in <module>
+    barf = BARF(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/barf.py", line 90, in __init__
+    self.open(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/barf.py", line 211, in open
+    self.binary = BinaryFile(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/core/binary.py", line 160, in __init__
+    self._open(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/core/binary.py", line 229, in _open
+    self._open_elf(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/core/binary.py", line 306, in _open_elf
+    self._section_data_start = min(data_addrs_start)
+ValueError: min() arg is an empty sequence
+get result...
+Traceback (most recent call last):
+  File "/home/zy/OptChecker/code/lu2cp/getResult.py", line 28, in <module>
+    file = open(sys.argv[1]+"/dst/Marks.txt", "r")
+FileNotFoundError: [Errno 2] No such file or directory: '/home/zy/OptChecker/code/lu2cp/reduce/2/dst/Marks.txt'
+grep: /home/zy/OptChecker/code/lu2cp/reduce/2/gcc_result.txt: No such file or directory
+grep: /home/zy/OptChecker/code/lu2cp/reduce/2/clang_result.txt: No such file or directory
+delta_test() returned 
+delta test failure
+[0 pass_lines :: 0] ***TRANSFORM REGULAR chunk 6 at -6***
+granularity reduced to 3
+granularity reduced to 1
+***TRANSFORM START***
+"/usr/libexec/topformflat" 0 < /tmp/creduce-FiGafQ/test.cpp > /tmp/iGndbs5gqA***ADVANCE*** from 1 to 0 with chunk 1
+/home/zy/OptChecker/code/lu2cp/reduce/2
+rm: cannot remove '/home/zy/OptChecker/code/lu2cp/reduce/2/gcc_result.txt': No such file or directory
+rm: cannot remove '/home/zy/OptChecker/code/lu2cp/reduce/2/clang_result.txt': No such file or directory
+========================================================================
+#include <algorithm>
+========================================================================
+rm: cannot remove '/home/zy/OptChecker/code/lu2cp/reduce/2/gcc_result.txt': No such file or directory
+Insertion for dst code....
+optimize code with gcc...
+check notOptimized...
+[+] Recovering program CFG...
+[+] Recovering program CFG...
+get result...
+Traceback (most recent call last):
+  File "/home/zy/OptChecker/code/lu2cp/getResult.py", line 28, in <module>
+    file = open(sys.argv[1]+"/dst/Marks.txt", "r")
+FileNotFoundError: [Errno 2] No such file or directory: '/home/zy/OptChecker/code/lu2cp/reduce/2/dst/Marks.txt'
+rm: cannot remove '/home/zy/OptChecker/code/lu2cp/reduce/2/clang_result.txt': No such file or directory
+Insertion for dst code....
+optimize code with clang...
+check notOptimized...
+Traceback (most recent call last):
+  File "/home/zy/OptChecker/code/lu2cp/dwarf_decode_address.py", line 145, in <module>
+    barf = BARF(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/barf.py", line 90, in __init__
+    self.open(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/barf.py", line 211, in open
+    self.binary = BinaryFile(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/core/binary.py", line 160, in __init__
+    self._open(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/core/binary.py", line 229, in _open
+    self._open_elf(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/core/binary.py", line 306, in _open_elf
+    self._section_data_start = min(data_addrs_start)
+ValueError: min() arg is an empty sequence
+Traceback (most recent call last):
+  File "/home/zy/OptChecker/code/lu2cp/dwarf_decode_address.py", line 145, in <module>
+    barf = BARF(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/barf.py", line 90, in __init__
+    self.open(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/barf.py", line 211, in open
+    self.binary = BinaryFile(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/core/binary.py", line 160, in __init__
+    self._open(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/core/binary.py", line 229, in _open
+    self._open_elf(filename)
+  File "/home/zy/.local/lib/python3.10/site-packages/barf/core/binary.py", line 306, in _open_elf
+    self._section_data_start = min(data_addrs_start)
+ValueError: min() arg is an empty sequence
+get result...
+Traceback (most recent call last):
+  File "/home/zy/OptChecker/code/lu2cp/getResult.py", line 28, in <module>
+    file = open(sys.argv[1]+"/dst/Marks.txt", "r")
+FileNotFoundError: [Errno 2] No such file or directory: '/home/zy/OptChecker/code/lu2cp/reduce/2/dst/Marks.txt'
+grep: /home/zy/OptChecker/code/lu2cp/reduce/2/gcc_result.txt: No such file or directory
+grep: /home/zy/OptChecker/code/lu2cp/reduce/2/clang_result.txt: No such file or directory
+delta_test() returned 
+delta test failure
+[0 pass_lines :: 0] ***TRANSFORM REGULAR chunk 1 at 0***
+went from 1 lines to 0 with chunk 1
+***ADVANCE*** from 0 to -1 with chunk 1
+/home/zy/OptChecker/code/lu2cp/reduce/2
+rm: cannot remove '/home/zy/OptChecker/code/lu2cp/reduce/2/gcc_result.txt': No such file or directory
+rm: cannot remove '/home/zy/OptChecker/code/lu2cp/reduce/2/clang_result.txt': No such file or directory
+========================================================================
+========================================================================
+delta_test() returned 
+delta test failure
+[0 pass_lines :: 0] ***TRANSFORM REGULAR chunk 1 at -1***
+
+All files being reduced have reached zero size; our work here is done.
+
+If you did not want a zero size file, you must help C-Reduce out by
+making sure that your interestingness test does not find files like
+this to be interesting.
+

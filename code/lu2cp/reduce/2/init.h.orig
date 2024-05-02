@@ -1,0 +1,6 @@
+extern bool var_17;
+extern unsigned char var_18;
+extern unsigned long long int var_21;
+extern bool var_24;
+extern unsigned long long int var_25;
+extern short var_26;
