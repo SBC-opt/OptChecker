@@ -5,4 +5,4 @@ code/*/yarpgen_out
 code/*/barf.log
 gcc/build
 llvm-project/build
-yarpgen/build
+yarpgen/build*

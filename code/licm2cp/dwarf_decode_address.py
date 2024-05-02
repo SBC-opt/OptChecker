@@ -124,12 +124,16 @@ if __name__ == '__main__':
     filename = sys.argv[1]
     barf = BARF(filename)
 
+    insert_string = "OutOfLoop"  
+    index_of_dot = sys.argv[2].find(".")
+    outfile2 = sys.argv[2][:index_of_dot] + insert_string + sys.argv[2][index_of_dot:]
+
     #
     # Recover CFG
     #
     print("[+] Recovering program CFG...")
 
-    cfg = barf.recover_cfg(start=0x0, end=0xa1)
+    cfg = barf.recover_cfg()
 
     loopaddress = []
     for bb_src in cfg.basic_blocks:
@@ -137,9 +141,9 @@ if __name__ == '__main__':
             #print(bb_src.address)
             #print(branch_type)
             #print(bb_dst_addr)
-            if bb_src.address==bb_dst_addr:
-                loopaddress.append((bb_src.address, bb_src.end_address))
-                print(bb_src.address, bb_src.end_address)
+            if bb_src.address>=bb_dst_addr:
+                loopaddress.append((bb_dst_addr, bb_src.end_address))
+                print(bb_dst_addr, bb_src.end_address)
 
     
     with open(sys.argv[1], 'rb') as f:
@@ -150,11 +154,19 @@ if __name__ == '__main__':
         md = Cs(CS_ARCH_X86, CS_MODE_64)
         for i in md.disasm(ops, addr):
             addr = int(f'0x{i.address:x}', 0)
+            if "dst" in sys.argv[1]:
+                process_file(sys.argv[1], addr, sys.argv[2])
+                continue
+            if "mov" in i.mnemonic:
+                continue
+
+            flag=0
             for first, second in loopaddress:
                 if (addr>=first and addr <=second):
-                    #with open(sys.argv[2],'a') as outf:   # .txt  auto create
-                    #    res = f'0x{i.address:x}:\t{i.mnemonic}\t{i.op_str}'
-                    #    outf.write(res)     
                     #print(f'0x{i.address:x}:\t{i.mnemonic}\t{i.op_str}')
                     process_file(sys.argv[1], addr, sys.argv[2])
+                    flag=1
+            
+            if flag == 0:
+                process_file(sys.argv[1], addr, outfile2)
             

@@ -1,311 +1,409 @@
-	.text
 	.file	"test.cpp"
-	.file	0 "/home/zy/OptChecker/code/licm2cp" "/home/zy/OptChecker/code/licm2cp/example/dst/test.cpp" md5 0xd080fe9c4a006008184a3b5c8dc47fe7
-	.file	1 "example/dst" "init.h" md5 0x81587e5ddf78cd8e5300889014bb826c
-	.globl	_Z4testv                        # -- Begin function _Z4testv
-	.p2align	4, 0x90
-	.type	_Z4testv,@function
-_Z4testv:                               # @_Z4testv
-.Lfunc_begin0:
+	.text
+.Ltext0:
+	.file 0 "/home/zy/OptChecker/code/licm2cp" "/home/zy/OptChecker/code/licm2cp/example/dst/test.cpp"
+	.p2align 4
+	.globl	_Z4testv
+	.type	_Z4testv, @function
+_Z4testv:
+.LFB0:
+	.file 1 "/home/zy/OptChecker/code/licm2cp/example/dst/test.cpp"
+	.loc 1 3 13 view -0
 	.cfi_startproc
-# %bb.0:
-	.file	2 "example/dst" "test.cpp" md5 0xd080fe9c4a006008184a3b5c8dc47fe7
-	.loc	2 4 17 prologue_end             # example/dst/test.cpp:4:17
-	movl	b(%rip), %eax
-	movl	a(%rip), %ecx
-	.loc	2 4 15 is_stmt 0                # example/dst/test.cpp:4:15
-	addl	%eax, %ecx
-	.loc	2 4 12                          # example/dst/test.cpp:4:12
-	movq	myInsert0@GOTPCREL(%rip), %rdx
-	movl	%ecx, (%rdx)
-	.loc	2 5 10 is_stmt 1                # example/dst/test.cpp:5:10
-	movq	myInsert1@GOTPCREL(%rip), %rdx
-	movl	%eax, (%rdx)
-.Ltmp0:
-	.loc	2 12 23                         # example/dst/test.cpp:12:23
-	movq	myMark2@GOTPCREL(%rip), %rdx
-	movl	%eax, (%rdx)
-.Ltmp1:
-	.loc	2 6 11                          # example/dst/test.cpp:6:11
+	.loc 1 4 3 view .LVU1
+	.loc 1 4 15 is_stmt 0 view .LVU2
+	movl	b(%rip), %esi
+	movl	a(%rip), %edx
+	leal	(%rdx,%rsi), %eax
+	.loc 1 5 10 view .LVU3
+	movl	%esi, myInsert1(%rip)
+	.loc 1 6 10 view .LVU4
+	movl	%esi, %ecx
+	.loc 1 4 15 view .LVU5
+	movl	%eax, myInsert0(%rip)
+	.loc 1 5 1 is_stmt 1 view .LVU6
+	.loc 1 6 1 view .LVU7
+	.loc 1 6 11 is_stmt 0 view .LVU8
+	movl	%esi, %eax
 	negl	%eax
-	.loc	2 6 10 is_stmt 0                # example/dst/test.cpp:6:10
-	movq	myInsert2@GOTPCREL(%rip), %rdx
-	movl	%eax, (%rdx)
-.Ltmp2:
-	.loc	2 0 0                           # example/dst/test.cpp:0:0
-	movl	%ecx, a(%rip)
+	movl	%eax, myInsert2(%rip)
+	.loc 1 7 1 is_stmt 1 view .LVU9
+.LVL0:
+.LBB2:
+	.loc 1 7 19 discriminator 1 view .LVU10
+.LBE2:
+	.loc 1 6 10 is_stmt 0 view .LVU11
+	movl	$4087153, %eax
+	jmp	.L2
+.LVL1:
+	.p2align 4,,10
+	.p2align 3
+.L3:
+.LBB3:
+	.loc 1 13 3 view .LVU12
+	xorl	%ecx, %ecx
+.LVL2:
+.L2:
+	.loc 1 9 1 is_stmt 1 view .LVU13
+	.loc 1 9 7 is_stmt 0 view .LVU14
+	addl	%ecx, %edx
+	.loc 1 11 1 is_stmt 1 view .LVU15
+	.loc 1 12 5 view .LVU16
+	.loc 1 12 16 view .LVU17
+	.loc 1 13 1 view .LVU18
+	.loc 1 7 1 discriminator 3 view .LVU19
+.LVL3:
+	.loc 1 7 19 discriminator 1 view .LVU20
+	subl	$1, %eax
+.LVL4:
+	.loc 1 7 19 is_stmt 0 discriminator 1 view .LVU21
+	jne	.L3
+	subl	%ecx, %esi
+	movl	%edx, m(%rip)
+	movl	%edx, a(%rip)
+	movl	%esi, myMark2(%rip)
 	movl	$0, b(%rip)
-	.loc	2 9 3 is_stmt 1                 # example/dst/test.cpp:9:3
-	movl	%ecx, m(%rip)
-.Ltmp3:
-	.loc	2 15 1                          # example/dst/test.cpp:15:1
-	retq
-.Ltmp4:
-.Lfunc_end0:
-	.size	_Z4testv, .Lfunc_end0-_Z4testv
+.LBE3:
+	.loc 1 15 1 view .LVU22
+	ret
 	.cfi_endproc
-                                        # -- End function
-	.type	m,@object                       # @m
-	.bss
-	.globl	m
-	.p2align	2, 0x0
-m:
-	.long	0                               # 0x0
-	.size	m, 4
-
-	.type	a,@object                       # @a
-	.globl	a
-	.p2align	2, 0x0
-a:
-	.long	0                               # 0x0
-	.size	a, 4
-
-	.type	b,@object                       # @b
+.LFE0:
+	.size	_Z4testv, .-_Z4testv
 	.globl	b
-	.p2align	2, 0x0
-b:
-	.long	0                               # 0x0
+	.bss
+	.align 4
+	.type	b, @object
 	.size	b, 4
-
-	.section	.debug_abbrev,"",@progbits
-	.byte	1                               # Abbreviation Code
-	.byte	17                              # DW_TAG_compile_unit
-	.byte	1                               # DW_CHILDREN_yes
-	.byte	37                              # DW_AT_producer
-	.byte	37                              # DW_FORM_strx1
-	.byte	19                              # DW_AT_language
-	.byte	5                               # DW_FORM_data2
-	.byte	3                               # DW_AT_name
-	.byte	37                              # DW_FORM_strx1
-	.byte	114                             # DW_AT_str_offsets_base
-	.byte	23                              # DW_FORM_sec_offset
-	.byte	16                              # DW_AT_stmt_list
-	.byte	23                              # DW_FORM_sec_offset
-	.byte	27                              # DW_AT_comp_dir
-	.byte	37                              # DW_FORM_strx1
-	.byte	17                              # DW_AT_low_pc
-	.byte	27                              # DW_FORM_addrx
-	.byte	18                              # DW_AT_high_pc
-	.byte	6                               # DW_FORM_data4
-	.byte	115                             # DW_AT_addr_base
-	.byte	23                              # DW_FORM_sec_offset
-	.byte	116                             # DW_AT_rnglists_base
-	.byte	23                              # DW_FORM_sec_offset
-	.byte	0                               # EOM(1)
-	.byte	0                               # EOM(2)
-	.byte	2                               # Abbreviation Code
-	.byte	52                              # DW_TAG_variable
-	.byte	0                               # DW_CHILDREN_no
-	.byte	3                               # DW_AT_name
-	.byte	37                              # DW_FORM_strx1
-	.byte	73                              # DW_AT_type
-	.byte	19                              # DW_FORM_ref4
-	.byte	63                              # DW_AT_external
-	.byte	25                              # DW_FORM_flag_present
-	.byte	58                              # DW_AT_decl_file
-	.byte	11                              # DW_FORM_data1
-	.byte	59                              # DW_AT_decl_line
-	.byte	11                              # DW_FORM_data1
-	.byte	2                               # DW_AT_location
-	.byte	24                              # DW_FORM_exprloc
-	.byte	0                               # EOM(1)
-	.byte	0                               # EOM(2)
-	.byte	3                               # Abbreviation Code
-	.byte	36                              # DW_TAG_base_type
-	.byte	0                               # DW_CHILDREN_no
-	.byte	3                               # DW_AT_name
-	.byte	37                              # DW_FORM_strx1
-	.byte	62                              # DW_AT_encoding
-	.byte	11                              # DW_FORM_data1
-	.byte	11                              # DW_AT_byte_size
-	.byte	11                              # DW_FORM_data1
-	.byte	0                               # EOM(1)
-	.byte	0                               # EOM(2)
-	.byte	4                               # Abbreviation Code
-	.byte	46                              # DW_TAG_subprogram
-	.byte	1                               # DW_CHILDREN_yes
-	.byte	17                              # DW_AT_low_pc
-	.byte	27                              # DW_FORM_addrx
-	.byte	18                              # DW_AT_high_pc
-	.byte	6                               # DW_FORM_data4
-	.byte	64                              # DW_AT_frame_base
-	.byte	24                              # DW_FORM_exprloc
-	.byte	122                             # DW_AT_call_all_calls
-	.byte	25                              # DW_FORM_flag_present
-	.byte	110                             # DW_AT_linkage_name
-	.byte	37                              # DW_FORM_strx1
-	.byte	3                               # DW_AT_name
-	.byte	37                              # DW_FORM_strx1
-	.byte	58                              # DW_AT_decl_file
-	.byte	11                              # DW_FORM_data1
-	.byte	59                              # DW_AT_decl_line
-	.byte	11                              # DW_FORM_data1
-	.byte	63                              # DW_AT_external
-	.byte	25                              # DW_FORM_flag_present
-	.byte	0                               # EOM(1)
-	.byte	0                               # EOM(2)
-	.byte	5                               # Abbreviation Code
-	.byte	11                              # DW_TAG_lexical_block
-	.byte	1                               # DW_CHILDREN_yes
-	.byte	85                              # DW_AT_ranges
-	.byte	35                              # DW_FORM_rnglistx
-	.byte	0                               # EOM(1)
-	.byte	0                               # EOM(2)
-	.byte	6                               # Abbreviation Code
-	.byte	52                              # DW_TAG_variable
-	.byte	0                               # DW_CHILDREN_no
-	.byte	3                               # DW_AT_name
-	.byte	37                              # DW_FORM_strx1
-	.byte	58                              # DW_AT_decl_file
-	.byte	11                              # DW_FORM_data1
-	.byte	59                              # DW_AT_decl_line
-	.byte	11                              # DW_FORM_data1
-	.byte	73                              # DW_AT_type
-	.byte	19                              # DW_FORM_ref4
-	.byte	0                               # EOM(1)
-	.byte	0                               # EOM(2)
-	.byte	0                               # EOM(3)
+b:
+	.zero	4
+	.globl	a
+	.align 4
+	.type	a, @object
+	.size	a, 4
+a:
+	.zero	4
+	.globl	m
+	.align 4
+	.type	m, @object
+	.size	m, 4
+m:
+	.zero	4
+	.text
+.Letext0:
+	.file 2 "/home/zy/OptChecker/code/licm2cp/example/dst/init.h"
 	.section	.debug_info,"",@progbits
-.Lcu_begin0:
-	.long	.Ldebug_info_end0-.Ldebug_info_start0 # Length of Unit
-.Ldebug_info_start0:
-	.short	5                               # DWARF version number
-	.byte	1                               # DWARF Unit Type
-	.byte	8                               # Address Size (in bytes)
-	.long	.debug_abbrev                   # Offset Into Abbrev. Section
-	.byte	1                               # Abbrev [1] 0xc:0x59 DW_TAG_compile_unit
-	.byte	0                               # DW_AT_producer
-	.short	33                              # DW_AT_language
-	.byte	1                               # DW_AT_name
-	.long	.Lstr_offsets_base0             # DW_AT_str_offsets_base
-	.long	.Lline_table_start0             # DW_AT_stmt_list
-	.byte	2                               # DW_AT_comp_dir
-	.byte	3                               # DW_AT_low_pc
-	.long	.Lfunc_end0-.Lfunc_begin0       # DW_AT_high_pc
-	.long	.Laddr_table_base0              # DW_AT_addr_base
-	.long	.Lrnglists_table_base0          # DW_AT_rnglists_base
-	.byte	2                               # Abbrev [2] 0x27:0xb DW_TAG_variable
-	.byte	3                               # DW_AT_name
-	.long	50                              # DW_AT_type
-                                        # DW_AT_external
-	.byte	1                               # DW_AT_decl_file
-	.byte	1                               # DW_AT_decl_line
-	.byte	2                               # DW_AT_location
-	.byte	161
-	.byte	0
-	.byte	3                               # Abbrev [3] 0x32:0x4 DW_TAG_base_type
-	.byte	4                               # DW_AT_name
-	.byte	5                               # DW_AT_encoding
-	.byte	4                               # DW_AT_byte_size
-	.byte	2                               # Abbrev [2] 0x36:0xb DW_TAG_variable
-	.byte	5                               # DW_AT_name
-	.long	50                              # DW_AT_type
-                                        # DW_AT_external
-	.byte	1                               # DW_AT_decl_file
-	.byte	2                               # DW_AT_decl_line
-	.byte	2                               # DW_AT_location
-	.byte	161
-	.byte	1
-	.byte	2                               # Abbrev [2] 0x41:0xb DW_TAG_variable
-	.byte	6                               # DW_AT_name
-	.long	50                              # DW_AT_type
-                                        # DW_AT_external
-	.byte	1                               # DW_AT_decl_file
-	.byte	2                               # DW_AT_decl_line
-	.byte	2                               # DW_AT_location
-	.byte	161
-	.byte	2
-	.byte	4                               # Abbrev [4] 0x4c:0x18 DW_TAG_subprogram
-	.byte	3                               # DW_AT_low_pc
-	.long	.Lfunc_end0-.Lfunc_begin0       # DW_AT_high_pc
-	.byte	1                               # DW_AT_frame_base
-	.byte	87
-                                        # DW_AT_call_all_calls
-	.byte	7                               # DW_AT_linkage_name
-	.byte	8                               # DW_AT_name
-	.byte	2                               # DW_AT_decl_file
-	.byte	3                               # DW_AT_decl_line
-                                        # DW_AT_external
-	.byte	5                               # Abbrev [5] 0x58:0xb DW_TAG_lexical_block
-	.byte	0                               # DW_AT_ranges
-	.byte	6                               # Abbrev [6] 0x5a:0x8 DW_TAG_variable
-	.byte	9                               # DW_AT_name
-	.byte	2                               # DW_AT_decl_file
-	.byte	7                               # DW_AT_decl_line
-	.long	50                              # DW_AT_type
-	.byte	0                               # End Of Children Mark
-	.byte	0                               # End Of Children Mark
-	.byte	0                               # End Of Children Mark
-.Ldebug_info_end0:
-	.section	.debug_rnglists,"",@progbits
-	.long	.Ldebug_list_header_end0-.Ldebug_list_header_start0 # Length
-.Ldebug_list_header_start0:
-	.short	5                               # Version
-	.byte	8                               # Address size
-	.byte	0                               # Segment selector size
-	.long	1                               # Offset entry count
-.Lrnglists_table_base0:
-	.long	.Ldebug_ranges0-.Lrnglists_table_base0
-.Ldebug_ranges0:
-	.byte	4                               # DW_RLE_offset_pair
-	.uleb128 .Ltmp0-.Lfunc_begin0           #   starting offset
-	.uleb128 .Ltmp1-.Lfunc_begin0           #   ending offset
-	.byte	4                               # DW_RLE_offset_pair
-	.uleb128 .Ltmp2-.Lfunc_begin0           #   starting offset
-	.uleb128 .Ltmp3-.Lfunc_begin0           #   ending offset
-	.byte	0                               # DW_RLE_end_of_list
-.Ldebug_list_header_end0:
-	.section	.debug_str_offsets,"",@progbits
-	.long	44                              # Length of String Offsets Set
-	.short	5
-	.short	0
-.Lstr_offsets_base0:
-	.section	.debug_str,"MS",@progbits,1
-.Linfo_string0:
-	.asciz	"clang version 19.0.0git (https://github.com/llvm/llvm-project.git c379a5b69e7e1917589a1d0b6993d74e6697490e)" # string offset=0
-.Linfo_string1:
-	.asciz	"/home/zy/OptChecker/code/licm2cp/example/dst/test.cpp" # string offset=108
-.Linfo_string2:
-	.asciz	"/home/zy/OptChecker/code/licm2cp" # string offset=162
-.Linfo_string3:
-	.asciz	"m"                             # string offset=195
-.Linfo_string4:
-	.asciz	"int"                           # string offset=197
-.Linfo_string5:
-	.asciz	"a"                             # string offset=201
-.Linfo_string6:
-	.asciz	"b"                             # string offset=203
-.Linfo_string7:
-	.asciz	"_Z4testv"                      # string offset=205
-.Linfo_string8:
-	.asciz	"test"                          # string offset=214
-.Linfo_string9:
-	.asciz	"c"                             # string offset=219
-	.section	.debug_str_offsets,"",@progbits
-	.long	.Linfo_string0
-	.long	.Linfo_string1
-	.long	.Linfo_string2
-	.long	.Linfo_string3
-	.long	.Linfo_string4
-	.long	.Linfo_string5
-	.long	.Linfo_string6
-	.long	.Linfo_string7
-	.long	.Linfo_string8
-	.long	.Linfo_string9
-	.section	.debug_addr,"",@progbits
-	.long	.Ldebug_addr_end0-.Ldebug_addr_start0 # Length of contribution
-.Ldebug_addr_start0:
-	.short	5                               # DWARF version number
-	.byte	8                               # Address size
-	.byte	0                               # Segment selector size
-.Laddr_table_base0:
+.Ldebug_info0:
+	.long	0xca
+	.value	0x5
+	.byte	0x1
+	.byte	0x8
+	.long	.Ldebug_abbrev0
+	.uleb128 0x3
+	.long	.LASF6
+	.byte	0x21
+	.long	.LASF0
+	.long	.LASF1
+	.quad	.Ltext0
+	.quad	.Letext0-.Ltext0
+	.long	.Ldebug_line0
+	.uleb128 0x2
+	.string	"m"
+	.byte	0x1
+	.byte	0x5
+	.long	0x41
+	.uleb128 0x9
+	.byte	0x3
 	.quad	m
+	.uleb128 0x4
+	.byte	0x4
+	.byte	0x5
+	.string	"int"
+	.uleb128 0x2
+	.string	"a"
+	.byte	0x2
+	.byte	0x5
+	.long	0x41
+	.uleb128 0x9
+	.byte	0x3
 	.quad	a
+	.uleb128 0x2
+	.string	"b"
+	.byte	0x2
+	.byte	0x8
+	.long	0x41
+	.uleb128 0x9
+	.byte	0x3
 	.quad	b
-	.quad	.Lfunc_begin0
-.Ldebug_addr_end0:
-	.ident	"clang version 19.0.0git (https://github.com/llvm/llvm-project.git c379a5b69e7e1917589a1d0b6993d74e6697490e)"
-	.section	".note.GNU-stack","",@progbits
-	.addrsig
+	.uleb128 0x1
+	.long	.LASF2
+	.byte	0x5
+	.long	0x41
+	.uleb128 0x1
+	.long	.LASF3
+	.byte	0x8
+	.long	0x41
+	.uleb128 0x1
+	.long	.LASF4
+	.byte	0xb
+	.long	0x41
+	.uleb128 0x1
+	.long	.LASF5
+	.byte	0xc
+	.long	0x41
+	.uleb128 0x5
+	.long	.LASF7
+	.byte	0x1
+	.byte	0x3
+	.byte	0x6
+	.long	.LASF8
+	.quad	.LFB0
+	.quad	.LFE0-.LFB0
+	.uleb128 0x1
+	.byte	0x9c
+	.uleb128 0x6
+	.long	.LLRL0
+	.uleb128 0x7
+	.string	"c"
+	.byte	0x1
+	.byte	0x7
+	.byte	0xa
+	.long	0x41
+	.long	.LLST1
+	.long	.LVUS1
+	.byte	0
+	.byte	0
+	.byte	0
+	.section	.debug_abbrev,"",@progbits
+.Ldebug_abbrev0:
+	.uleb128 0x1
+	.uleb128 0x34
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0xe
+	.uleb128 0x3a
+	.uleb128 0x21
+	.sleb128 2
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x39
+	.uleb128 0x21
+	.sleb128 12
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x3f
+	.uleb128 0x19
+	.uleb128 0x3c
+	.uleb128 0x19
+	.byte	0
+	.byte	0
+	.uleb128 0x2
+	.uleb128 0x34
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0x21
+	.sleb128 2
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x39
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x3f
+	.uleb128 0x19
+	.uleb128 0x2
+	.uleb128 0x18
+	.byte	0
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x11
+	.byte	0x1
+	.uleb128 0x25
+	.uleb128 0xe
+	.uleb128 0x13
+	.uleb128 0xb
+	.uleb128 0x3
+	.uleb128 0x1f
+	.uleb128 0x1b
+	.uleb128 0x1f
+	.uleb128 0x11
+	.uleb128 0x1
+	.uleb128 0x12
+	.uleb128 0x7
+	.uleb128 0x10
+	.uleb128 0x17
+	.byte	0
+	.byte	0
+	.uleb128 0x4
+	.uleb128 0x24
+	.byte	0
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x3e
+	.uleb128 0xb
+	.uleb128 0x3
+	.uleb128 0x8
+	.byte	0
+	.byte	0
+	.uleb128 0x5
+	.uleb128 0x2e
+	.byte	0x1
+	.uleb128 0x3f
+	.uleb128 0x19
+	.uleb128 0x3
+	.uleb128 0xe
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x39
+	.uleb128 0xb
+	.uleb128 0x6e
+	.uleb128 0xe
+	.uleb128 0x11
+	.uleb128 0x1
+	.uleb128 0x12
+	.uleb128 0x7
+	.uleb128 0x40
+	.uleb128 0x18
+	.uleb128 0x7a
+	.uleb128 0x19
+	.byte	0
+	.byte	0
+	.uleb128 0x6
+	.uleb128 0xb
+	.byte	0x1
+	.uleb128 0x55
+	.uleb128 0x17
+	.byte	0
+	.byte	0
+	.uleb128 0x7
+	.uleb128 0x34
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x39
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x2
+	.uleb128 0x17
+	.uleb128 0x2137
+	.uleb128 0x17
+	.byte	0
+	.byte	0
+	.byte	0
+	.section	.debug_loclists,"",@progbits
+	.long	.Ldebug_loc3-.Ldebug_loc2
+.Ldebug_loc2:
+	.value	0x5
+	.byte	0x8
+	.byte	0
+	.long	0
+.Ldebug_loc0:
+.LVUS1:
+	.uleb128 .LVU10
+	.uleb128 .LVU12
+	.uleb128 .LVU12
+	.uleb128 .LVU20
+	.uleb128 .LVU20
+	.uleb128 .LVU21
+	.uleb128 .LVU21
+	.uleb128 0
+.LLST1:
+	.byte	0x4
+	.uleb128 .LVL0-.Ltext0
+	.uleb128 .LVL1-.Ltext0
+	.uleb128 0x2
+	.byte	0x30
+	.byte	0x9f
+	.byte	0x4
+	.uleb128 .LVL1-.Ltext0
+	.uleb128 .LVL3-.Ltext0
+	.uleb128 0x9
+	.byte	0xc
+	.long	0x3e5d71
+	.byte	0x70
+	.sleb128 0
+	.byte	0x1c
+	.byte	0x9f
+	.byte	0x4
+	.uleb128 .LVL3-.Ltext0
+	.uleb128 .LVL4-.Ltext0
+	.uleb128 0x9
+	.byte	0xc
+	.long	0x3e5d72
+	.byte	0x70
+	.sleb128 0
+	.byte	0x1c
+	.byte	0x9f
+	.byte	0x4
+	.uleb128 .LVL4-.Ltext0
+	.uleb128 .LFE0-.Ltext0
+	.uleb128 0x9
+	.byte	0xc
+	.long	0x3e5d71
+	.byte	0x70
+	.sleb128 0
+	.byte	0x1c
+	.byte	0x9f
+	.byte	0
+.Ldebug_loc3:
+	.section	.debug_aranges,"",@progbits
+	.long	0x2c
+	.value	0x2
+	.long	.Ldebug_info0
+	.byte	0x8
+	.byte	0
+	.value	0
+	.value	0
+	.quad	.Ltext0
+	.quad	.Letext0-.Ltext0
+	.quad	0
+	.quad	0
+	.section	.debug_rnglists,"",@progbits
+.Ldebug_ranges0:
+	.long	.Ldebug_ranges3-.Ldebug_ranges2
+.Ldebug_ranges2:
+	.value	0x5
+	.byte	0x8
+	.byte	0
+	.long	0
+.LLRL0:
+	.byte	0x4
+	.uleb128 .LBB2-.Ltext0
+	.uleb128 .LBE2-.Ltext0
+	.byte	0x4
+	.uleb128 .LBB3-.Ltext0
+	.uleb128 .LBE3-.Ltext0
+	.byte	0
+.Ldebug_ranges3:
 	.section	.debug_line,"",@progbits
-.Lline_table_start0:
+.Ldebug_line0:
+	.section	.debug_str,"MS",@progbits,1
+.LASF2:
+	.string	"myInsert0"
+.LASF3:
+	.string	"myInsert1"
+.LASF4:
+	.string	"myInsert2"
+.LASF5:
+	.string	"myMark2"
+.LASF6:
+	.string	"GNU C++17 15.0.0 20240426 (experimental) -mtune=generic -march=x86-64 -g -O3 -fwrapv -fno-tree-vectorize"
+.LASF7:
+	.string	"test"
+.LASF8:
+	.string	"_Z4testv"
+	.section	.debug_line_str,"MS",@progbits,1
+.LASF1:
+	.string	"/home/zy/OptChecker/code/licm2cp"
+.LASF0:
+	.string	"/home/zy/OptChecker/code/licm2cp/example/dst/test.cpp"
+	.ident	"GCC: (GNU) 15.0.0 20240426 (experimental)"
+	.section	.note.GNU-stack,"",@progbits
