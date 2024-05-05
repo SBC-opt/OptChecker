@@ -751,6 +751,7 @@ StubStmt::generateStructure(std::shared_ptr<GenCtx> ctx) {
 
 void Pragma::emit(std::shared_ptr<EmitCtx> ctx, std::ostream &stream,
                   std::string offset) {
+    return;
     stream << offset << "#pragma ";
     auto clang_emit_helper = [&stream](std::string name) {
         stream << "clang loop " << name << "(enable)";

@@ -41,7 +41,7 @@ GenPolicy::GenPolicy() {
     loop_nest_depth_lim = 3;
     uniformProbFromMax(loop_nest_depth_distr, loop_nest_depth_lim, 2);
 
-    loop_depth_limit = 0;
+    loop_depth_limit = 1;
 
     if_else_depth_limit = 0;
 

@@ -416,9 +416,9 @@ bool TypeCastExpr::propagateType() {
 void TypeCastExpr::emit(std::shared_ptr<EmitCtx> ctx, std::ostream &stream,
                         std::string offset) {
     // TODO: add switch for C++ style conversions and switch for implicit casts
-    //stream << "((" << (is_implicit ? "/* implicit */" : "")
-    //       << to_type->getName(ctx) << ") ";
-    stream << "(";
+    stream << "((" << (is_implicit ? "/* implicit */" : "")
+           << to_type->getName(ctx) << ") ";
+    //stream << "(";
     expr->emit(ctx, stream);
     stream << ")";
 }

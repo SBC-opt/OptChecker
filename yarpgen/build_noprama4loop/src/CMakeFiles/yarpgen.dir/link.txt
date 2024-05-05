@@ -1,0 +1,1 @@
+/usr/local/bin/c++ -O3 -DNDEBUG  -static CMakeFiles/yarpgen.dir/main.cpp.o -o ../yarpgen  libyarpgen_lib.a 
