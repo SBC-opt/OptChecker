@@ -43,7 +43,7 @@ GenPolicy::GenPolicy() {
 
     loop_depth_limit = 1;
 
-    if_else_depth_limit = 0;
+    if_else_depth_limit = 1;
 
     scope_stmt_min_num = 2;
     scope_stmt_max_num = 5;
