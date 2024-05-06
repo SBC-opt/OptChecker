@@ -2,9 +2,8 @@ script_path=$(readlink -f "$0")
 current_dir=$(dirname "$script_path")
 echo $current_dir
 testDir="$current_dir/.."
-dwarfpy="/home/zy/OptChecker/code/lu2cp/dwarf_decode_address.py"
-getResultpy="/home/zy/OptChecker/code/lu2cp/getResult.py"
-
+StartLine=0
+EndLine=$(wc -l < "$testDir/test.cpp")
 
 echo "========================================================================"
 cat ./test.cpp
@@ -19,8 +18,7 @@ outFile2=$testDir/clang_result.txt
 rm $outFile1
 rm $outFile2
 
-bash /home/zy/OptChecker/code/lu2cp/run_simple.sh $testDir $dwarfpy $getResultpy gcc
-bash /home/zy/OptChecker/code/lu2cp/run_simple.sh $testDir $dwarfpy $getResultpy clang
+bash /home/zy/OptChecker/code/arithmetic2cp/run_simple.sh $testDir 0 90
 
 if grep -q " " "$outFile1" || grep -q " " "$outFile2"; then
     exit 0;

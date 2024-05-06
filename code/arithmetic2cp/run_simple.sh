@@ -5,6 +5,10 @@ testDir=$1
 StartLine=$2
 EndLine=$3
 
+script_path=$(readlink -f "$0")
+current_dir=$(dirname "$script_path")
+echo $current_dir
+
 rm $testDir/gcc_result.txt
 rm $testDir/clang_result.txt
 
@@ -112,7 +116,8 @@ do
         cp $testDir/test.cpp $testDir/src/test.cpp
         cp $testDir/init.h $testDir/src/init.h
 
-        echo "$type1 Optimized_Mark1; $type2 Variable_Static;" >>  $testDir/src/init.h
+        #echo "$type1 Optimized_Mark1; $type2 Variable_Static;" >>  $testDir/src/init.h
+        echo "$type1 Optimized_Mark1, Variable_Static;" >>  $testDir/src/init.h
         insert_code1="$type1 Variable_T = $expression1; $name = $expression1 + Optimized_Mark1;"
         insert_code1=$(echo "$insert_code1" | sed 's/&/\\&/g')
         insert_code2="Variable_Static = $expression2; $name = Variable_T;"
@@ -143,8 +148,8 @@ do
         #echo "==================================================="
 
         #detect
-        bash run_single_line.sh gcc $testDir $Line1 $Line2
-        bash run_single_line.sh clang $testDir $Line1 $Line2
+        bash $current_dir/run_single_line.sh gcc $testDir $Line1 $Line2
+        bash $current_dir/run_single_line.sh clang $testDir $Line1 $Line2
 
         break
     done

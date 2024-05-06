@@ -6,3 +6,4 @@ code/*/barf.log
 gcc/build
 llvm-project/build
 yarpgen/build*
+code/*/reduce/*/

@@ -33,6 +33,16 @@ num_mark=$(wc -l < "$testDir/dst/Marks.txt")
 ((num_mark--))
 echo num_mark:$num_mark
 
+if [ "$compiler" = "gcc" ]; then
+    gcc -o $testDir/src/test.o -g -O3 -fwrapv -fno-tree-vectorize -c $testDir/src/test.cpp
+else
+    clang -o $testDir/src/test.o -g -O3 -fwrapv -fno-tree-vectorize -c $testDir/src/test.cpp
+fi
+
+#check src
+echo "check notOptimized...."
+python3 $dwarfpy $testDir/src/test.o $testDir/src/notOptimized.txt
+
 for (( i=0; i<=num_mark; i++ ))
     do
         cp $testDir/dst/test_origin.cpp $testDir/dst/test.cpp
@@ -45,17 +55,11 @@ for (( i=0; i<=num_mark; i++ ))
             outFile=$testDir/gcc_result.txt
             echo "optimize code with gcc..."
             gcc -o $testDir/dst/test.s -S -g -O3 -fwrapv -fno-tree-vectorize -c $testDir/dst/test.cpp
-            gcc -o $testDir/src/test.o -g -O3 -fwrapv -fno-tree-vectorize -c $testDir/src/test.cpp
         else
             outFile=$testDir/clang_result.txt
             echo "optimize code with clang..."
             clang -o $testDir/dst/test.s -S -g -O3 -fwrapv -fno-tree-vectorize -c $testDir/dst/test.cpp
-            clang -o $testDir/src/test.o -g -O3 -fwrapv -fno-tree-vectorize -c $testDir/src/test.cpp
         fi
-
-        #check src
-        echo "check notOptimized...."
-        python3 $dwarfpy $testDir/src/test.o $testDir/src/notOptimized.txt
 
         echo "get result..."
         python3 $getResultpy $testDir $outFile
