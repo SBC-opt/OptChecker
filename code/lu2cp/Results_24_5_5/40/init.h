@@ -1,0 +1,12 @@
+extern int var_15;
+extern bool arr_2 [11] __attribute__((aligned(32)));
+extern unsigned long long int arr_3 [11] __attribute__((aligned(64)));
+extern bool arr_4 [11] __attribute__((aligned(16)));
+extern unsigned short arr_8 [23] __attribute__((aligned(32)));
+extern bool arr_9 [23] __attribute__((aligned(16)));
+extern unsigned char arr_10 [23] [23] __attribute__((aligned(64)));
+extern unsigned short arr_13 [11] [11] __attribute__((aligned(32)));
+extern int arr_14 [11] __attribute__((aligned(16)));
+extern unsigned char arr_15 [11] __attribute__((aligned(32)));
+extern short arr_19 [10] __attribute__((aligned(16)));
+extern signed char arr_20 [10] [10] __attribute__((aligned(64)));
