@@ -1,5 +1,5 @@
 num=$1
-dir=$2
+dir=$2 #example: /home/zy/OptChecker/code/arithmetic2cp
 
 cp -r $dir/Results_24_4_30/$num $dir/reduce/$num
 mkdir $dir/reduce/$num/code
