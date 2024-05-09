@@ -1,0 +1,13 @@
+/*
+yarpgen version 2.0 (build 98594532f2 on 2024:05:05)
+Seed: 3358069863
+Invocation: /home/zy/OptChecker/yarpgen/build_noloop_noif_noimplicit/yarpgen -o /home/zy/OptChecker/code/arithmetic2cp/yarpgen_out
+*/
+#include "init.h"
+#include <algorithm>
+void test(long long int var_2, long long int var_3, long long int var_4, long long int var_5, long long int var_6, long long int var_7, long long int var_10, long long int var_12, long long int var_13, long long int var_14, long long int var_15, int zero) {
+    var_5 = ((((var_7) != ((+(var_2))))) ? (var_10) : (var_6));
+    var_2 = std::max((std::min(((((var_3)) ? (var_4) : (var_2))), (std::max((var_13), (6102819165967389726LL))))), ((((((var_5)) ? (var_7) : (var_12))) * ((((!((-7952250544687058656LL)))))))));
+    var_14 = (+((((!((5662290321386232586LL)))) ? ((((((-6102819165967389708LL)) || ((var_12)))))) : (var_3))));
+    var_19 = (std::min((var_19), (var_15)));
+}

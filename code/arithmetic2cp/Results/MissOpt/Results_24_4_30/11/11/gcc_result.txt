@@ -1,0 +1,32 @@
+Inconsistence is detected, dst_optimized 1, src_optimized 0
+Variable line: 9    Expression line: 10
+src after transformed:=============================
+bool  Optimized_Mark1, Variable_Static;
+ 
+/*
+yarpgen version 2.0 0
+Seed 8
+Invocation /home/zy/OptChecker/yarpgen/build/yarpgen o /home/zy/OptChecker/test_yarpgen
+*/
+#include "init.h"
+#include <algorithm>
+void fn1(bool var_0, bool var_3, bool var_4, unsigned char var_7, bool arr_0, bool arr_4  ,   bool arr_7    , bool arr_8       ,               bool arr_32       , bool arr_37     ,  bool arr_39         ) {
+bool  Variable_T = 0; var_3 = 0 + Optimized_Mark1;
+Variable_Static = std::min((/* implicit */int) var_3, -var_7); var_3 = Variable_T;
+}
+ 
+dst after transformed:=============================
+bool  Optimized_Mark2, Variable_Mark1, Variable_Mark2;
+ 
+/*
+yarpgen version 2.0 0
+Seed 8
+Invocation /home/zy/OptChecker/yarpgen/build/yarpgen o /home/zy/OptChecker/test_yarpgen
+*/
+#include "init.h"
+#include <algorithm>
+void fn1(bool var_0, bool var_3, bool var_4, unsigned char var_7, bool arr_0, bool arr_4  ,   bool arr_7    , bool arr_8       ,               bool arr_32       , bool arr_37     ,  bool arr_39         ) {
+    var_3 = 0;
+if((std::min((/* implicit */int) Variable_Mark1, -var_7))-(std::min((/* implicit */int) Variable_Mark2, -var_7))){Optimized_Mark2=1;}
+}
+ 

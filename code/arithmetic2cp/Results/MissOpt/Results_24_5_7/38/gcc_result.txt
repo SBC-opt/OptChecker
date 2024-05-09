@@ -1,0 +1,42 @@
+Inconsistence is detected, dst_optimized 1, src_optimized 0
+Variable line: 10    Expression line: 12
+src after transformed:=============================
+extern unsigned int var_19;
+extern unsigned long long int var_20;
+short  Optimized_Mark1, Variable_Static;
+ 
+/*
+yarpgen version 2.0 (build 98594532f2 on 2024:05:05)
+Seed: 843193605
+Invocation: /home/zy/OptChecker/yarpgen/build_noloop_noif_noimplicit/yarpgen -o /home/zy/OptChecker/code/arithmetic2cp/yarpgen_out
+*/
+#include "init.h"
+#include <algorithm>
+void test(short var_2, long long int var_5, bool var_6, long long int var_7, signed char var_9, signed char var_10, unsigned long long int var_11, int var_14, int zero) {
+    var_5 = (((((short)17941)) ? (600779247U) : ((((short)-15398)))));
+short  Variable_T = ((-(((unsigned char)128)))); var_2 = ((-(((unsigned char)128)))) + Optimized_Mark1;
+    var_14 = ((((unsigned char)0)) << (((((signed char)46)) - (18))));
+Variable_Static = ((((+((((signed char)39))))) >= (((((((signed char)127)) ? ((var_10)) : ((var_10)))) << ((((((var_9)) ? (var_11) : (((var_2))))) - (6484823344033604261ULL))))))); var_2 = Variable_T;
+    var_20 = ((((var_19)) ? (((var_7))) : ((var_6))));
+}
+ 
+dst after transformed:=============================
+extern unsigned int var_19;
+extern unsigned long long int var_20;
+short  Optimized_Mark2, Variable_Mark1, Variable_Mark2;
+ 
+/*
+yarpgen version 2.0 (build 98594532f2 on 2024:05:05)
+Seed: 843193605
+Invocation: /home/zy/OptChecker/yarpgen/build_noloop_noif_noimplicit/yarpgen -o /home/zy/OptChecker/code/arithmetic2cp/yarpgen_out
+*/
+#include "init.h"
+#include <algorithm>
+void test(short var_2, long long int var_5, bool var_6, long long int var_7, signed char var_9, signed char var_10, unsigned long long int var_11, int var_14, int zero) {
+    var_5 = (((((short)17941)) ? (600779247U) : ((((short)-15398)))));
+    var_2 = ((-(((unsigned char)128))));
+    var_14 = ((((unsigned char)0)) << (((((signed char)46)) - (18))));
+if((((((+((((signed char)39))))) >= (((((((signed char)127)) ? ((var_10)) : ((var_10)))) << ((((((var_9)) ? (var_11) : (((Variable_Mark1))))) - (6484823344033604261ULL))))))))-(((((+((((signed char)39))))) >= (((((((signed char)127)) ? ((var_10)) : ((var_10)))) << ((((((var_9)) ? (var_11) : (((Variable_Mark2))))) - (6484823344033604261ULL))))))))){Optimized_Mark2=1;}
+    var_20 = ((((var_19)) ? (((var_7))) : ((var_6))));
+}
+ 

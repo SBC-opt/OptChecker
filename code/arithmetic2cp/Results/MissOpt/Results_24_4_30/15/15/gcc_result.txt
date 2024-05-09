@@ -1,0 +1,30 @@
+Inconsistence is detected, dst_optimized 1, src_optimized 0
+Variable line: 6    Expression line: 7
+src after transformed:=============================
+extern unsigned var_17;
+unsigned  Optimized_Mark1, Variable_Static;
+ 
+#include "init.h"
+#include <algorithm>
+void a(int d[]) {
+  for (;;)
+    for (char b;;) {
+unsigned  Variable_T = 0; var_17 = 0 + Optimized_Mark1;
+Variable_Static = d[b + 1] ?: std::min((unsigned)d[b + 1], var_17); var_17 = Variable_T;
+    }
+}
+ 
+dst after transformed:=============================
+extern unsigned var_17;
+unsigned  Optimized_Mark2, Variable_Mark1, Variable_Mark2;
+ 
+#include "init.h"
+#include <algorithm>
+void a(int d[]) {
+  for (;;)
+    for (char b;;) {
+      var_17 = 0;
+if((d[b + 1] ?: std::min((unsigned)d[b + 1], Variable_Mark1))-(d[b + 1] ?: std::min((unsigned)d[b + 1], Variable_Mark2))){Optimized_Mark2=1;}
+    }
+}
+ 
