@@ -8,3 +8,4 @@ llvm-project/build
 yarpgen/build*
 code/*/reduce/*/
 code/*/Reduced_*
+code/*/*/*/*/*/*/nohup.out
