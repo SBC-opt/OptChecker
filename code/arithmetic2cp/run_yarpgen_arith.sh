@@ -18,4 +18,9 @@ while [ ! -s "$outFile1" ] && [ ! -s "$outFile2" ]
         StartLine=$(grep -n "test(" "$testDir/test.cpp" | cut -d: -f1)
         EndLine=$(wc -l < "$testDir/test.cpp")
         bash run_simple.sh $testDir $StartLine $EndLine
+
+        if [[ -s "$outFile1" ]] && [[ -s "$outFile2" ]]; then
+            rm $outFile1
+            rm $outFile2
+        fi
     done
