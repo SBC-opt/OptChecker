@@ -9,3 +9,4 @@ yarpgen/build*
 code/*/reduce/*/
 code/*/Reduced_*
 code/*/*/*/*/*/*/nohup.out
+*nohup.out

@@ -1,0 +1,32 @@
+Inconsistence is detected, dst_optimized 1, src_optimized 0
+Variable line: 9    Expression line: 10
+src after transformed:=============================
+unsigned long long int  Optimized_Mark1, Variable_Static;
+ 
+/*
+yarpgen version 2.0 0
+Seed 0
+Invocation /home/zy/OptChecker/yarpgen/build_noloop_noif_noimplicit/yarpgen o /home/zy/OptChecker/code/arithmetic2cp/yarpgen_out
+*/
+#include "init.h"
+#include <algorithm>
+void fn1(   short var_8, unsigned long long int var_9, short var_10) {
+unsigned long long int  Variable_T = 0; var_9 = 0 + Optimized_Mark1;
+Variable_Static = 0 + var_10 ^ (var_9 || var_8) && var_8; var_9 = Variable_T;
+}
+ 
+dst after transformed:=============================
+unsigned long long int  Optimized_Mark2, Variable_Mark1, Variable_Mark2;
+ 
+/*
+yarpgen version 2.0 0
+Seed 0
+Invocation /home/zy/OptChecker/yarpgen/build_noloop_noif_noimplicit/yarpgen o /home/zy/OptChecker/code/arithmetic2cp/yarpgen_out
+*/
+#include "init.h"
+#include <algorithm>
+void fn1(   short var_8, unsigned long long int var_9, short var_10) {
+    var_9 = 0;
+if((0 + var_10 ^ (Variable_Mark1 || var_8) && var_8)-(0 + var_10 ^ (Variable_Mark2 || var_8) && var_8)){Optimized_Mark2=1;}
+}
+ 
