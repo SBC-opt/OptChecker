@@ -1,0 +1,32 @@
+Inconsistence is detected, dst_optimized 0, src_optimized 1
+Variable line: 9    Expression line: 10
+src after transformed:=============================
+bool  Optimized_Mark1, Variable_Static;
+ 
+/*
+yarpgen version 2.0 0
+Seed 7
+Invocation /home/zy/OptChecker/yarpgen/build_noloop_noif_noimplicit/yarpgen o /home/zy/OptChecker/code/arithmetic2cp/yarpgen_out
+*/
+#include "init.h"
+#include <algorithm>
+void fn1(unsigned short var_0,  bool var_5, bool var_8) {
+bool  Variable_T = var_5; var_8 = var_5 + Optimized_Mark1;
+Variable_Static = var_0 << var_8; var_8 = Variable_T;
+}
+ 
+dst after transformed:=============================
+bool  Optimized_Mark2, Variable_Mark1, Variable_Mark2;
+ 
+/*
+yarpgen version 2.0 0
+Seed 7
+Invocation /home/zy/OptChecker/yarpgen/build_noloop_noif_noimplicit/yarpgen o /home/zy/OptChecker/code/arithmetic2cp/yarpgen_out
+*/
+#include "init.h"
+#include <algorithm>
+void fn1(unsigned short var_0,  bool var_5, bool var_8) {
+    var_8 = var_5;
+if((var_0 << Variable_Mark1)-(var_0 << Variable_Mark2)){Optimized_Mark2=1;}
+}
+ 
