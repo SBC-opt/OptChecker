@@ -10,3 +10,5 @@ code/*/reduce/*/
 code/*/Reduced_*
 code/*/*/*/*/*/*/nohup.out
 *nohup.out
+gcc-releases-gcc-13.2.0.zip
+*/build

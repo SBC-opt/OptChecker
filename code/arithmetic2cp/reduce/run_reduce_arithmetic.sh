@@ -18,12 +18,12 @@ outFile2=$testDir/clang_result.txt
 rm $outFile1
 rm $outFile2
 
-bash /home/zy/OptChecker/code/arithmetic2cp/run_simple.sh $testDir 8 90
+bash /home/zy/OptChecker/code/arithmetic2cp/run_simple.sh $testDir 8 14
 
-#if grep -q " " "$outFile1" && ! grep -q " " "$outFile2"; then
-#if ! grep -q " " "$outFile1" && grep -q " " "$outFile2"; then
+if grep -q " " "$outFile1" && ! grep -q " " "$outFile2"; then   #only gcc
+#if ! grep -q " " "$outFile1" && grep -q " " "$outFile2"; then  #only clang
 #if grep -q " " "$outFile1" && grep -q " " "$outFile2"; then
-if grep -q " " "$outFile1" || grep -q " " "$outFile2"; then
+#if grep -q " " "$outFile1" || grep -q " " "$outFile2"; then
     exit 0;
 else
     exit 1;
