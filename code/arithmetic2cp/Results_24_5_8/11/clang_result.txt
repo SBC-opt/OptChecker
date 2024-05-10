@@ -1,0 +1,38 @@
+Inconsistence is detected, dst_optimized 0, src_optimized 1
+Variable line: 9    Expression line: 11
+src after transformed:=============================
+extern unsigned char var_21;
+unsigned short  Optimized_Mark1, Variable_Static;
+ 
+/*
+yarpgen version 2.0 (build 98594532f2 on 2024:05:05)
+Seed: 3252765235
+Invocation: /home/zy/OptChecker/yarpgen/build_noloop_noif_noimplicit/yarpgen -o /home/zy/OptChecker/code/arithmetic2cp/yarpgen_out
+*/
+#include "init.h"
+#include <algorithm>
+void test(int var_6, signed char var_12, unsigned short var_15, int zero) {
+unsigned short  Variable_T = ((9223372036854775807LL)); var_15 = ((9223372036854775807LL)) + Optimized_Mark1;
+    var_6 = ((((signed char)0)) ? (((signed char)9)) : (((signed char)-60)));
+Variable_Static = (var_15); var_15 = Variable_T;
+    var_21 = ((!((var_12))));
+}
+ 
+dst after transformed:=============================
+extern unsigned char var_21;
+unsigned short  Optimized_Mark2, Variable_Mark1, Variable_Mark2;
+ 
+/*
+yarpgen version 2.0 (build 98594532f2 on 2024:05:05)
+Seed: 3252765235
+Invocation: /home/zy/OptChecker/yarpgen/build_noloop_noif_noimplicit/yarpgen -o /home/zy/OptChecker/code/arithmetic2cp/yarpgen_out
+*/
+#include "init.h"
+#include <algorithm>
+void test(int var_6, signed char var_12, unsigned short var_15, int zero) {
+    var_15 = ((9223372036854775807LL));
+    var_6 = ((((signed char)0)) ? (((signed char)9)) : (((signed char)-60)));
+if(((Variable_Mark1))-((Variable_Mark2))){Optimized_Mark2=1;}
+    var_21 = ((!((var_12))));
+}
+ 

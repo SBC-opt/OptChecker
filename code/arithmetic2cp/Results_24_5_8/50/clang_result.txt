@@ -1,0 +1,34 @@
+Inconsistence is detected, dst_optimized 0, src_optimized 1
+Variable line: 9    Expression line: 10
+src after transformed:=============================
+bool  Optimized_Mark1, Variable_Static;
+ 
+/*
+yarpgen version 2.0 (build 98594532f2 on 2024:05:05)
+Seed: 3468135001
+Invocation: /home/zy/OptChecker/yarpgen/build_noloop_noif_noimplicit/yarpgen -o /home/zy/OptChecker/code/arithmetic2cp/yarpgen_out
+*/
+#include "init.h"
+#include <algorithm>
+void test(bool var_6, long long int var_9, bool var_15, int zero) {
+bool  Variable_T = var_6; var_15 = var_6 + Optimized_Mark1;
+Variable_Static = (std::min((var_6), (var_15))); var_15 = Variable_T;
+    var_6 = (var_9);
+}
+ 
+dst after transformed:=============================
+bool  Optimized_Mark2, Variable_Mark1, Variable_Mark2;
+ 
+/*
+yarpgen version 2.0 (build 98594532f2 on 2024:05:05)
+Seed: 3468135001
+Invocation: /home/zy/OptChecker/yarpgen/build_noloop_noif_noimplicit/yarpgen -o /home/zy/OptChecker/code/arithmetic2cp/yarpgen_out
+*/
+#include "init.h"
+#include <algorithm>
+void test(bool var_6, long long int var_9, bool var_15, int zero) {
+    var_15 = var_6;
+if(((std::min((var_6), (Variable_Mark1))))-((std::min((var_6), (Variable_Mark2))))){Optimized_Mark2=1;}
+    var_6 = (var_9);
+}
+ 

@@ -1,0 +1,42 @@
+Inconsistence is detected, dst_optimized 0, src_optimized 1
+Variable line: 12    Expression line: 13
+src after transformed:=============================
+extern short var_15;
+extern unsigned short var_16;
+short  Optimized_Mark1, Variable_Static;
+ 
+/*
+yarpgen version 2.0 (build 98594532f2 on 2024:05:05)
+Seed: 1856914949
+Invocation: /home/zy/OptChecker/yarpgen/build_noloop_noif_noimplicit/yarpgen -o /home/zy/OptChecker/code/arithmetic2cp/yarpgen_out
+*/
+#include "init.h"
+#include <algorithm>
+void test(long long int var_2, long long int var_5, unsigned long long int var_6, int var_9, long long int var_11, int zero) {
+    var_9 -= (var_2);
+    var_6 |= ((var_11));
+    var_6 = (35184103653376LL);
+short  Variable_T = (((((var_5) + (9223372036854775807LL))) << ((((unsigned short)12507))))); var_15 = (((((var_5) + (9223372036854775807LL))) << ((((unsigned short)12507))))) + Optimized_Mark1;
+Variable_Static = (var_15); var_15 = Variable_T;
+}
+ 
+dst after transformed:=============================
+extern short var_15;
+extern unsigned short var_16;
+short  Optimized_Mark2, Variable_Mark1, Variable_Mark2;
+ 
+/*
+yarpgen version 2.0 (build 98594532f2 on 2024:05:05)
+Seed: 1856914949
+Invocation: /home/zy/OptChecker/yarpgen/build_noloop_noif_noimplicit/yarpgen -o /home/zy/OptChecker/code/arithmetic2cp/yarpgen_out
+*/
+#include "init.h"
+#include <algorithm>
+void test(long long int var_2, long long int var_5, unsigned long long int var_6, int var_9, long long int var_11, int zero) {
+    var_9 -= (var_2);
+    var_6 |= ((var_11));
+    var_6 = (35184103653376LL);
+    var_15 = (((((var_5) + (9223372036854775807LL))) << ((((unsigned short)12507)))));
+if(((Variable_Mark1))-((Variable_Mark2))){Optimized_Mark2=1;}
+}
+ 

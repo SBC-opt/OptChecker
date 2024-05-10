@@ -1,0 +1,32 @@
+Inconsistence is detected, dst_optimized 0, src_optimized 1
+Variable line: 9    Expression line: 10
+src after transformed:=============================
+bool  Optimized_Mark1, Variable_Static;
+ 
+/*
+yarpgen version 2.0 (build 98594532f2 on 2024:05:05)
+Seed: 4226958394
+Invocation: /home/zy/OptChecker/yarpgen/build_noloop_noif_noimplicit/yarpgen -o /home/zy/OptChecker/code/arithmetic2cp/yarpgen_out
+*/
+#include "init.h"
+#include <algorithm>
+void test(bool var_2, unsigned int var_3, unsigned long long int var_4, bool var_5, signed char var_7, unsigned int var_8, unsigned short var_9, int zero) {
+bool  Variable_T = ((((((((var_2)) * (-2073639503))) * ((((var_9)) / (-686445317)))))) > (((((var_3) | (var_3))) - (((var_8) - ((((signed char)68)))))))); var_5 = ((((((((var_2)) * (-2073639503))) * ((((var_9)) / (-686445317)))))) > (((((var_3) | (var_3))) - (((var_8) - ((((signed char)68)))))))) + Optimized_Mark1;
+Variable_Static = (((((260046848U) | ((((signed char)127))))) / (((((var_8) ^ (((var_5))))) | (((((260046848U) < (((var_7))))))))))); var_5 = Variable_T;
+}
+ 
+dst after transformed:=============================
+bool  Optimized_Mark2, Variable_Mark1, Variable_Mark2;
+ 
+/*
+yarpgen version 2.0 (build 98594532f2 on 2024:05:05)
+Seed: 4226958394
+Invocation: /home/zy/OptChecker/yarpgen/build_noloop_noif_noimplicit/yarpgen -o /home/zy/OptChecker/code/arithmetic2cp/yarpgen_out
+*/
+#include "init.h"
+#include <algorithm>
+void test(bool var_2, unsigned int var_3, unsigned long long int var_4, bool var_5, signed char var_7, unsigned int var_8, unsigned short var_9, int zero) {
+    var_5 = ((((((((var_2)) * (-2073639503))) * ((((var_9)) / (-686445317)))))) > (((((var_3) | (var_3))) - (((var_8) - ((((signed char)68))))))));
+if(((((((260046848U) | ((((signed char)127))))) / (((((var_8) ^ (((Variable_Mark1))))) | (((((260046848U) < (((var_7))))))))))))-((((((260046848U) | ((((signed char)127))))) / (((((var_8) ^ (((Variable_Mark2))))) | (((((260046848U) < (((var_7))))))))))))){Optimized_Mark2=1;}
+}
+ 

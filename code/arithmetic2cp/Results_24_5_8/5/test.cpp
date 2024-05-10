@@ -1,0 +1,14 @@
+/*
+yarpgen version 2.0 (build 98594532f2 on 2024:05:05)
+Seed: 254214818
+Invocation: /home/zy/OptChecker/yarpgen/build_noloop_noif_noimplicit/yarpgen -o /home/zy/OptChecker/code/arithmetic2cp/yarpgen_out
+*/
+#include "init.h"
+#include <algorithm>
+void test(unsigned char var_0, unsigned char var_2, unsigned char var_7, unsigned char var_8, unsigned char var_9, unsigned char var_10, unsigned char var_13, unsigned char var_14, int zero) {
+    var_14 = (std::min((((((unsigned char)15)) ? (((unsigned char)253)) : (((((unsigned char)229)) ? ((var_13)) : (((unsigned char)17)))))), ((var_8))));
+    var_0 &= std::min(((unsigned char)53), (var_0));
+    var_2 = ((((std::max((std::max((var_14), ((unsigned char)255))), ((unsigned char)2)))) ? (((!(((((var_0)) ? (((unsigned char)0)) : ((var_13)))))))) : ((-(((unsigned char)255))))));
+    var_20 &= (std::min(((-((var_0)))), ((((((var_9)) && (((unsigned char)47)))) ? ((var_0)) : (((((var_7)) < ((var_13)))))))));
+    var_10 = ((~(((unsigned char)242))));
+}
