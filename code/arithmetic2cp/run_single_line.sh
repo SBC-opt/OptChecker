@@ -10,14 +10,20 @@ outFile=$testDir/result.txt
 #The compiler performs optimizations
 if [ "$compiler" = "gcc" ]; then
     outFile=$testDir/gcc_result.txt
-    echo "optimize code with gcc..."
-    gcc -o $testDir/dst/test.s -S -O3 $testDir/dst/test.cpp
-    gcc -o $testDir/src/test.s -S -O3 $testDir/src/test.cpp
+    #echo "optimize code with gcc..."
+    #gcc -o $testDir/dst/test.s -S -O3 $testDir/dst/test.cpp
+    #gcc -o $testDir/src/test.s -S -O3 $testDir/src/test.cpp
+    echo "optimize code with clang-16.0.0..."
+    /home/zy/OptChecker/llvm-project-llvmorg-16.0.0/build/bin/clang -o $testDir/dst/test.s -S -O3 $testDir/dst/test.cpp
+    /home/zy/OptChecker/llvm-project-llvmorg-16.0.0/build/bin/clang -o $testDir/src/test.s -S -O3 $testDir/src/test.cpp
 else
     outFile=$testDir/clang_result.txt
-    echo "optimize code with clang..."
+    echo "optimize code with clang-trunk..."
     clang -o $testDir/dst/test.s -S -O3 $testDir/dst/test.cpp
     clang -o $testDir/src/test.s -S -O3 $testDir/src/test.cpp
+    ###gcc-13.2
+    #/home/zy/OptChecker/gcc-releases-gcc-13.2.0/build/bin/usr/local/bin/gcc -o $testDir/dst/test.s -S -O3 $testDir/dst/test.cpp
+    #/home/zy/OptChecker/gcc-releases-gcc-13.2.0/build/bin/usr/local/bin/gcc -o $testDir/src/test.s -S -O3 $testDir/src/test.cpp
 fi
 
 if [ ! -s "$testDir/src/test.s" ] || [ ! -s "$testDir/dst/test.s" ]; then
