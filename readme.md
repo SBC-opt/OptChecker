@@ -1,6 +1,10 @@
+# Requirments
+
 **python** >= 3.8
 
 **creduce** is required (obtained from apt)
+
+# How to Build 
 
 **GCC BUILD**
     
@@ -25,23 +29,26 @@
     cmake ..
     make
 
+# How to Run
 
-**lu2cp run_simple.sh**
+## using the detection of loop unswitching with constant folding as an example
 
-bash run_simple.sh testDir dwarfpy getResultpy compiler
+### Detection for a single use case
 
-run_simple.sh: Detection of optimization problems for a single use case.
+**commond line:** bash run_simple.sh $testDir $dwarfpy $getResultpy $compiler
 
-testDir: The structure is similar to `./code/lu2cp/testDir_example`. The test files are named `test.cpp` and `init.h` and need to have `src` and `dst` folders.
+**run_simple.sh:** Detection of optimization problems for a single use case.
 
-dwarfpy: The relevant script `dwarf_decode_address.py`, which is stored in the corresponding folder.
+**testDir:** The structure is similar to `./code/lu2cp/testDir_example`. The test files are named `test.cpp` and `init.h` and need to have `src` and `dst` folders.
 
-getResultpy: The relevant script `getResult.py`, which is stored in the corresponding folder.
+**dwarfpy:** The relevant script `dwarf_decode_address.py`, which is stored in the corresponding folder.
 
-compiler: `gcc` or `clang`.
+**getResultpy:** The relevant script `getResult.py`, which is stored in the corresponding folder.
+
+**compiler:** `gcc` or `clang`.
 
     Example:
-    ~/OptChecker/code/lu2cp$ bash run_simple.sh /home/zy/OptChecker/code/lu2cp/example /home/zy/OptChecker/code/lu2cp/dwarf_decode_address.py /home/zy/OptChecker/code/lu2cp/getResult.py gcc
+    ~/OptChecker/code/lu2cp$ bash run_simple.sh ~/OptChecker/code/lu2cp/example ~/OptChecker/code/lu2cp/dwarf_decode_address.py ~/OptChecker/code/lu2cp/getResult.py gcc
     The terminal output includes:
     [Missed opportunities for Opt1]:
     ------------------------------------------
@@ -50,8 +57,30 @@ compiler: `gcc` or `clang`.
     ------------------------------------------
     The file outputs: gcc_result.txt in testDir.
 
-**lu2cp run_reduce_lu.sh Example**
-Location: ./code/lu2cp/reduce
+
+### Detection with Yarpgen
+
+**commond line:** bash run_yarpgen_lu.sh $yarpgenBin $yarpgenDir $testDir $dwarfpy $getResultpy
+
+**run_yarpgen_lu.sh:** Detection of optimization problems with Yarpgen.
+
+**yarpgenBin:** The exe of Yarpgen.
+
+**yarpgenDir:** The folder for test cases that Yarpgen generates.
+
+**testDir:** The structure is similar to `./code/lu2cp/testDir_example`. The test files are named `test.cpp` and `init.h` and need to have `src` and `dst` folders.
+
+**dwarfpy:** The relevant script `dwarf_decode_address.py`, which is stored in the corresponding folder.
+
+**getResultpy:** The relevant script `getResult.py`, which is stored in the corresponding folder.
+
+
+
+### Testcase reduction
+
+**Location:** ./code/lu2cp/reduce
+
+**Script:** run_reduce_lu.sh
 
 To prepare the reduced files for /home/zy/OptChecker/code/lu2cp/Results_24_5_5/3:
 
@@ -64,3 +93,8 @@ Reduce Dir:
 Reduce:
 
     creduce --n 1 ./run_reduce_lu.sh test.cpp init.h
+
+
+### Experimental results
+The missed optimizations we found and their related data are available at
+https://github.com/ZY546/compiler-missed-optimizations-list/issues
