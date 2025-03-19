@@ -11,7 +11,6 @@ code/*/Reduced_*
 code/*/*/*/*/*/*/nohup.out
 *nohup.out
 gcc-releases-gcc-13.2.0.zip
-*/
 gcc-releases-gcc-13.2.0
 llvm-project-llvmorg-16.0.0.zip
 llvm-project-llvmorg-16.0.0

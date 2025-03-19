@@ -95,6 +95,7 @@ Reduce:
     creduce --n 1 ./run_reduce_lu.sh test.cpp init.h
 
 
-### Experimental results
+# Experimental results
+
 The missed optimizations we found and their related data are available at
 https://github.com/ZY546/compiler-missed-optimizations-list/issues
