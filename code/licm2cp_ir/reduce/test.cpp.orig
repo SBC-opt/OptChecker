@@ -1,0 +1,51 @@
+/*
+yarpgen version 2.0 (build dd8c204 on 2023:05:31)
+Seed: 2802184824
+Invocation: ../yarpgen_licm -o .
+*/
+#include "init.h"
+#include <algorithm>
+void test(int var_0, int var_1, int var_2, int var_3, int var_4) {
+    var_0 += ((/* implicit */int) (-(var_0)));
+    var_0 += ((/* implicit */int) (((((-(var_2))) + (var_2))) + (var_3)));
+    /* LoopSeq 1 */
+
+    for (int i_0 = ((((var_2) + (((var_2) + (var_1))))) + (365119228))/*298864063*/; i_0 < (((((~(((var_1) ^ (var_2))))) + ((-(var_2))))) + (159466502))/*-504516764*/; i_0 += 3/*3*/) 
+    {
+        var_0 += ((/* implicit */int) (-(var_0)));
+        var_8 += ((/* implicit */int) var_0);
+        var_9 += ((/* implicit */int) ((((var_8) + (2147483647))) >> (((-1) + (1)))));
+        var_1 += ((/* implicit */int) -1292809773);
+        var_2 += ((/* implicit */int) ((var_1) + (var_2)));
+        var_0 += ((/* implicit */int) (-(15)));
+        var_1 += ((/* implicit */int) 1177645496);
+        var_14 += ((/* implicit */int) var_0);
+        var_1 += ((/* implicit */int) ((var_1) + (var_3)));
+        var_16 += ((/* implicit */int) ((var_1) + (var_1)));
+        var_17 += ((/* implicit */int) var_14);
+        var_1 += ((/* implicit */int) ((((470995608) + ((-(-55933885))))) + (var_1)));
+        var_19 += ((/* implicit */int) 502960088);
+        var_2 += ((/* implicit */int) (-(var_0)));
+        var_3 += ((/* implicit */int) ((var_14) + (var_0)));
+        var_22 += ((/* implicit */int) (-(var_17)));
+        var_3 += ((/* implicit */int) ((((var_17) + (((var_4) + (var_4))))) + ((-((-(728721195)))))));
+        var_0 += ((/* implicit */int) ((var_0) + ((-(var_19)))));
+    }
+    var_0 += ((/* implicit */int) (-(var_4)));
+    var_26 += ((/* implicit */int) ((-728721211) + (var_2)));
+    var_27 += ((/* implicit */int) ((536870848) + ((-(10)))));
+    var_28 += ((/* implicit */int) var_2);
+    var_19 += ((/* implicit */int) var_2);
+    var_26 += ((/* implicit */int) var_19);
+    var_22 += ((/* implicit */int) (-(-1)));
+    var_22 += ((/* implicit */int) var_2);
+    var_16 += ((/* implicit */int) (((((-(var_9))) + ((-(549919801))))) + (-11)));
+    var_26 += ((/* implicit */int) -2086744858);
+    var_19 += ((/* implicit */int) (((-(959268386))) + (var_0)));
+    var_14 += ((/* implicit */int) -1175759421);
+    var_19 += ((/* implicit */int) 116084278);
+    var_17 += ((/* implicit */int) 33521664);
+    var_16 += ((/* implicit */int) ((((var_2) + (((var_1) + (-1))))) + ((-(((-536870849) + (var_2)))))));
+    var_26 += ((/* implicit */int) ((var_0) + (-520647347)));
+    var_22 += ((/* implicit */int) ((var_2) + ((-((-(-637322334)))))));
+}

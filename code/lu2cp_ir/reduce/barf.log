@@ -1,0 +1,37 @@
+2023-10-28 07:46:19,080: barf.barf:INFO: Initializing BARF
+2023-10-28 07:46:19,096: barf.core.smt.smtsolver:DEBUG: > (set-option :global-decls false)
+2023-10-28 07:46:19,097: barf.core.smt.smtsolver:DEBUG: > (set-logic QF_AUFBV)
+2023-10-28 07:46:19,098: barf.core.smt.smtsolver:DEBUG: > (declare-fun MEM_0 () (Array (_ BitVec 64) (_ BitVec 8)))
+2023-10-28 07:46:19,098: barf.arch.emulator:INFO: Loading ELF image into memory
+2023-10-28 07:46:19,115: barf.core.smt.smtsolver:DEBUG: > (set-option :global-decls false)
+2023-10-28 07:46:19,115: barf.core.smt.smtsolver:DEBUG: > (set-logic QF_AUFBV)
+2023-10-28 07:46:19,115: barf.core.smt.smtsolver:DEBUG: > (declare-fun MEM_0 () (Array (_ BitVec 64) (_ BitVec 8)))
+2023-10-28 07:46:19,116: barf.arch.emulator:INFO: Loading ELF image into memory
+2023-10-28 07:46:20,064: barf.analysis.graphs.controlflowgraph:WARNING: Error while disassembling @ 0xb6
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/barf-0.6.0-py3.8.egg/barf/analysis/graphs/controlflowgraph.py", line 294, in _disassemble_bb
+    asm = self._disasm.disassemble(data_chunk, addr)
+  File "/usr/local/lib/python3.8/dist-packages/barf-0.6.0-py3.8.egg/barf/arch/x86/disassembler.py", line 72, in disassemble
+    raise DisassemblerError()
+barf.arch.disassembler.DisassemblerError
+2023-10-28 07:46:20,089: barf.analysis.graphs.controlflowgraph:WARNING: Error while disassembling @ 0x29e
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/barf-0.6.0-py3.8.egg/barf/analysis/graphs/controlflowgraph.py", line 294, in _disassemble_bb
+    asm = self._disasm.disassemble(data_chunk, addr)
+  File "/usr/local/lib/python3.8/dist-packages/barf-0.6.0-py3.8.egg/barf/arch/x86/disassembler.py", line 72, in disassemble
+    raise DisassemblerError()
+barf.arch.disassembler.DisassemblerError
+2023-10-28 07:46:20,110: barf.analysis.graphs.controlflowgraph:WARNING: Error while disassembling @ 0x29e
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/barf-0.6.0-py3.8.egg/barf/analysis/graphs/controlflowgraph.py", line 294, in _disassemble_bb
+    asm = self._disasm.disassemble(data_chunk, addr)
+  File "/usr/local/lib/python3.8/dist-packages/barf-0.6.0-py3.8.egg/barf/arch/x86/disassembler.py", line 72, in disassemble
+    raise DisassemblerError()
+barf.arch.disassembler.DisassemblerError
+2023-10-28 07:46:20,113: barf.analysis.graphs.controlflowgraph:WARNING: Error while disassembling @ 0x482
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/barf-0.6.0-py3.8.egg/barf/analysis/graphs/controlflowgraph.py", line 294, in _disassemble_bb
+    asm = self._disasm.disassemble(data_chunk, addr)
+  File "/usr/local/lib/python3.8/dist-packages/barf-0.6.0-py3.8.egg/barf/arch/x86/disassembler.py", line 72, in disassemble
+    raise DisassemblerError()
+barf.arch.disassembler.DisassemblerError
